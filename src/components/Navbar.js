@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-
+import { Context } from "../context/Context";
 function Navbar() {
+	const PF = "http://localhost:5000/images/";
+	const { user } = useContext(Context);
 	return (
 		<div>
 			<div className='h-10 w-screen bg-transparent flex justify-around items-center  '>
@@ -44,7 +46,7 @@ function Navbar() {
 					<Link to='setting'>
 						<div className=' rounded-full overflow-hidden h-6 w-6  text-white'>
 							<img
-								src='https://cdn.pixabay.com/photo/2017/12/28/16/18/bicycle-3045580_1280.jpg'
+								src={PF + user.profilePic}
 								alt=''
 								className='object-cover h-full w-full'
 							/>
