@@ -1,9 +1,15 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import API from "../API";
 import { Context } from "../context/Context";
 function Navbar() {
 	const PF = "http://localhost:5000/images/";
 	const { user } = useContext(Context);
+	const handlelogout = async () => {
+		try {
+			await API.post("/auth/logout");
+		} catch (err) {}
+	};
 	return (
 		<div>
 			<div className='h-10 w-screen bg-transparent flex justify-around items-center  '>
@@ -37,12 +43,24 @@ function Navbar() {
 					</div>
 				</div>
 				<div className='flex space-x-2'>
-					<div>
-						<Link to='login'>Login</Link>
-					</div>
-					<div className='px-3 rounded-lg bg-zinc-900 text-white'>
-						<Link to='signup'>Signup</Link>
-					</div>
+					{user ? (
+						<div
+							className='px-3 rounded-lg bg-zinc-900 text-white cursor-pointer'
+							onClick={handlelogout}
+						>
+							logout
+						</div>
+					) : (
+						<div className='flex space-x-2'>
+							<div>
+								<Link to='login'>Login</Link>
+							</div>
+							<div className='px-3 rounded-lg bg-zinc-900 text-white'>
+								<Link to='signup'>Signup</Link>
+							</div>
+						</div>
+					)}
+
 					<Link to='setting'>
 						<div className=' rounded-full overflow-hidden h-6 w-6  text-white'>
 							<img

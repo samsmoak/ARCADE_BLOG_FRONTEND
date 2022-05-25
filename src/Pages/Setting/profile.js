@@ -21,7 +21,7 @@ function Profile() {
 			data.append("file", file);
 			updatedUser.profilePic = filename;
 
-			console.log(updatedUser.profilePic);
+			// console.log(updatedUser.profilePic);
 			try {
 				await API.post("/upload", data);
 			} catch (err) {
@@ -30,7 +30,7 @@ function Profile() {
 		}
 
 		try {
-			const res = await API.put("/users/" + user._id, updatedUser);
+			const res = await API.put(`/users/${user._id}`, updatedUser);
 			setSuccess(true);
 			dispatch({ type: "UPDATE_SUCCESS", payload: res.data });
 		} catch (err) {
@@ -40,7 +40,6 @@ function Profile() {
 
 	return (
 		<div>
-			{" "}
 			<div className='h-screen w-small1'>
 				<div className='w-full py-10'>
 					<div className='w-full flex flex-col justify-center items-center space-y-3'>

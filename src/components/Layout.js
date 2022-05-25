@@ -5,8 +5,8 @@ import TheContent from "./TheContent";
 function Layout() {
 	return (
 		<div>
-			<Navbar />
-			<TheContent />
+			{/* <Navbar />
+			<TheContent /> */}
 		</div>
 	);
 }
