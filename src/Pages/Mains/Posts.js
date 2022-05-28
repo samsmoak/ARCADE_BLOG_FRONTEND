@@ -7,7 +7,7 @@ function Posts(props) {
 		<div>
 			{/* featured posts */}
 			<div className='flex justify-center w-screen py-10'>
-				<div className='grid  grid-flow-col  space-x-8 '>
+				<div className='grid  grid-flow-col  space-x-8 h-small2 bg-slate-700  '>
 					{props.recent.map((p) => {
 						return <RecentPost recent={p} key={p._id} />;
 					})}
@@ -95,7 +95,7 @@ function Posts(props) {
 			<div>
 				<div className=' py-4 w-screen '>
 					<div className=' flex items-center justify-center'>
-						<div className='grid grid-cols-1 md:grid-cols-2 gap-5   '>
+						<div className='grid grid-cols-1 md:grid-cols-3 gap-5 overflow-hidden h-bigxxx bg-gray-600   '>
 							{props.posts.map((p) => {
 								return <Post post={p} key={p._id} />;
 							})}

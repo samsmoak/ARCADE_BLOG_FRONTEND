@@ -19,7 +19,7 @@ function Signup() {
 			res.data && window.location.replace("/login");
 		} catch (err) {
 			setError(true);
-			console.log(err);
+			console.log(err.response.data);
 		}
 	};
 	return (
@@ -94,6 +94,7 @@ function Signup() {
 						{error && (
 							<div className='w-full text-center text-red-600'>
 								something went wrong!
+								{/* {error.res.data} */}
 							</div>
 						)}
 					</form>

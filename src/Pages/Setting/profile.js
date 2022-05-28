@@ -12,7 +12,9 @@ function Profile() {
 	const handleUpdate = async (e) => {
 		e.preventDefault();
 		dispatch({ type: "UPDATE_START" });
-		const updatedUser = {};
+		const updatedUser = {
+			userId: user._id,
+		};
 
 		if (file) {
 			const data = new FormData();
@@ -45,7 +47,7 @@ function Profile() {
 					<div className='w-full flex flex-col justify-center items-center space-y-3'>
 						<div className='h-28 w-28 rounded-full overflow-hidden  z-50 bg-slate-500'>
 							<img
-								src={PF + user.profilePic}
+								src={file ? URL.createObjectURL(file) : PF + user.profilePic}
 								alt=''
 								className='object-cover h-full w-full'
 							/>

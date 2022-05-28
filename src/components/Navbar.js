@@ -5,10 +5,9 @@ import { Context } from "../context/Context";
 function Navbar() {
 	const PF = "http://localhost:5000/images/";
 	const { user } = useContext(Context);
-	const handlelogout = async () => {
-		try {
-			await API.post("/auth/logout");
-		} catch (err) {}
+	const handlelogout = () => {
+		localStorage.clear();
+		window.location.replace("/");
 	};
 	return (
 		<div>
@@ -44,11 +43,22 @@ function Navbar() {
 				</div>
 				<div className='flex space-x-2'>
 					{user ? (
-						<div
-							className='px-3 rounded-lg bg-zinc-900 text-white cursor-pointer'
-							onClick={handlelogout}
-						>
-							logout
+						<div className='flex space-x-2'>
+							<div
+								className='px-3 rounded-lg bg-zinc-900 text-white cursor-pointer'
+								onClick={handlelogout}
+							>
+								logout
+							</div>
+							<Link to='setting'>
+								<div className=' rounded-full overflow-hidden h-6 w-6  text-white'>
+									<img
+										src={PF + user.profilePic}
+										alt=''
+										className='object-cover h-full w-full'
+									/>
+								</div>
+							</Link>
 						</div>
 					) : (
 						<div className='flex space-x-2'>
@@ -60,16 +70,6 @@ function Navbar() {
 							</div>
 						</div>
 					)}
-
-					<Link to='setting'>
-						<div className=' rounded-full overflow-hidden h-6 w-6  text-white'>
-							<img
-								src={PF + user.profilePic}
-								alt=''
-								className='object-cover h-full w-full'
-							/>
-						</div>
-					</Link>
 				</div>
 			</div>
 		</div>
