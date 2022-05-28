@@ -58,7 +58,7 @@ function Main() {
 					<div className='w-3/4  relative z-10'>
 						<h3 className='text-4xl font-bold bg-opacity-10 text-purple-600 backdrop-blur-sm font-redressed  '>
 							Arcade is a mininal theme for ghost. a beautiful way to share your
-							storieswith your glowing audience
+							stories with your glowing audience
 						</h3>
 					</div>
 					<div className='w-2/4   flex justify-start'>

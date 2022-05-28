@@ -10,17 +10,19 @@ function Login() {
 	const { dispatch, isFetching } = useContext(Context);
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		dispatch({ type: "LOGIN_START" });
-		try {
-			const res = await API.post("/auth/login", {
-				username: userRef.current.value,
-				password: passwordRef.current.value,
-			});
-			dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
-			window.location.replace("/");
-		} catch (err) {
-			dispatch({ type: "LOGIN_FAILURE" });
-			window.location.replace("/signup");
+		if (userRef.current.value && passwordRef.current.value) {
+			dispatch({ type: "LOGIN_START" });
+			try {
+				const res = await API.post("/auth/login", {
+					username: userRef.current.value,
+					password: passwordRef.current.value,
+				});
+				dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+				window.location.replace("/");
+			} catch (err) {
+				dispatch({ type: "LOGIN_FAILURE" });
+				// window.location.replace("/signup");
+			}
 		}
 	};
 	return (
