@@ -24,9 +24,9 @@ function Signup() {
 	};
 	return (
 		<div>
-			<div className=' w-screen h-screen  bg-[url("https://cdn.pixabay.com/photo/2019/02/14/07/28/painting-3995999_1280.jpg")] bg-cover flex justify-center items-center '>
-				<div className='h-small2 w-96 bg-gray-600 bg-opacity-50 rounded-xl py-10 px-4 border-t-2 border-r-4 border-b-2 border-opacity-30 border-gray-700'>
-					<div className='font-Yanone_Kaffeesatz text-4xl text-rose-500 uppercase text-center w-full'>
+			<div className=' w-screen h-screen   bg-cover flex justify-center items-center '>
+				<div className='h-small2 w-96 bg-gradient-to-bl from-purple-700 via-violet-600 to-pink-400 bg-gray-600 bg-opacity-50 rounded-xl py-10 px-4 border-t-2 border-r-4 border-b-2 border-opacity-30 border-gray-700'>
+					<div className='font-Yanone_Kaffeesatz text-4xl text-black uppercase text-center w-full'>
 						create your arcade account
 					</div>
 					<form onSubmit={handlesubmit}>
@@ -42,7 +42,7 @@ function Signup() {
 								type='text'
 								id='email'
 								placeholder='Username'
-								className='bg-opacity-20 bg-yellow-200'
+								className='bg-opacity-20 bg-yellow-200 rounded-xl'
 								onChange={(e) => {
 									setUsername(e.target.value);
 								}}
@@ -60,7 +60,7 @@ function Signup() {
 								type='text'
 								id='email'
 								placeholder='Email'
-								className='bg-opacity-20 bg-yellow-200'
+								className='bg-opacity-20 bg-yellow-200 rounded-xl'
 								onChange={(e) => {
 									setEmail(e.target.value);
 								}}
@@ -77,7 +77,7 @@ function Signup() {
 								type='password'
 								id='password'
 								placeholder='password'
-								className='bg-opacity-20 bg-yellow-200 text-gray-900'
+								className='bg-opacity-20 bg-yellow-200 rounded-xl text-gray-900'
 								onChange={(e) => {
 									setPassword(e.target.value);
 								}}

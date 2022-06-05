@@ -20,59 +20,8 @@ import Navbar from "./components/Navbar";
 import Profile from "./Pages/Setting/profile";
 import Dashboard from "./Pages/Setting/Dashboard";
 import RecentPost from "./Pages/Mains/RecentPost";
-// const Main = React.lazy(() => {
-// 	import("./Pages/Mains/Main");
-// });
-// const Login = React.lazy(() => {
-// 	import("./Pages/Login/Login");
-// });
-// const Signup = React.lazy(() => {
-// 	import("./Pages/Signup/Signup");
-// });
-// const Setting = React.lazy(() => {
-// 	import("./Pages/Setting/Setting");
-// });
-// const Write = React.lazy(() => {
-// 	import("./Pages/Write/Write");
-// });
-// const Single = React.lazy(() => {
-// 	import("./Pages/Single/Single");
-// });
-// const Update = React.lazy(() => {
-// 	import("./Pages/Update/Update");
-// });
+import Homepage from "./Pages/HomePage/Homepage";
 
-// const Layout = React.lazy(() => import("./components/Layout"));
-// const Main = React.lazy(() => {
-// 	import("./Pages/Mains/Main");
-// });
-// const Login = React.lazy(() => {
-// 	import("./Pages/Login/Login");
-// });
-// const Signup = React.lazy(() => {
-// 	import("./Pages/Signup/Signup");
-// });
-// const Setting = React.lazy(() => {
-// 	import("./Pages/Setting/Setting");
-// });
-// const Write = React.lazy(() => {
-// 	import("./Pages/Write/Write");
-// });
-// const Single = React.lazy(() => {
-// 	import("./Pages/Single/Single");
-// });
-// const Update = React.lazy(() => {
-// 	import("./Pages/Update/Update");
-// });
-// const routes = [
-// 	{ path: "/", element: <Main /> },
-// 	{ path: "login", element: <Login /> },
-// 	{ path: "write", element: <Write /> },
-// 	{ path: "signup", element: <Signup /> },
-// 	{ path: "setting", element: <Setting /> },
-// 	{ path: "single", element: <Single /> },
-// 	{ path: "update", element: <Update /> },
-// ];
 function App() {
 	const { user } = useContext(Context);
 	// let element = useRoutes(routes);
@@ -86,7 +35,8 @@ function App() {
 				{/* <React.Suspense fallback={"loading"}> */}
 				<Navbar />
 				<Routes>
-					<Route path='/' element={<Main />} />
+					<Route path='/' element={<Homepage />} />
+					<Route path='/main' element={<Main />} />
 					<Route path='login' element={<Login />} />
 					<Route path='write' element={user ? <Write /> : <Signup />} />
 					<Route path='signup' element={<Signup />} />
