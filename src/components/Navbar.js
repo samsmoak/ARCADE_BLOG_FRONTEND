@@ -11,7 +11,7 @@ function Navbar() {
 		window.location.replace("/");
 	};
 	return (
-		<div>
+		<div style={{ textDecoration: "none" }}>
 			<div className='h-10 w-screen bg-transparent flex justify-around items-center  '>
 				<div className='flex space-x-4'>
 					<div>
@@ -19,7 +19,7 @@ function Navbar() {
 							to='/'
 							className='font-ArchitectDaughter font-extrabold text-red-700 '
 						>
-							ARCADEBLOG
+							LUSTEK
 						</Link>
 					</div>
 					<div>
@@ -88,8 +88,10 @@ function Navbar() {
 						</div>
 					) : (
 						<div className='flex space-x-2'>
-							<div>
-								<Link to='login'>Login</Link>
+							<div className='text-white'>
+								<Link to='login' style={{ textDecoration: "none" }}>
+									Login
+								</Link>
 							</div>
 							<div className='px-3 rounded-lg bg-zinc-900 text-white'>
 								<Link to='signup'>Signup</Link>
