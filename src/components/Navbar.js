@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import API from "../API";
 import { Context } from "../context/Context";
+import { Menu } from "@headlessui/react";
 function Navbar() {
 	const PF = "http://localhost:5000/images/";
 	const { user } = useContext(Context);
@@ -10,7 +11,7 @@ function Navbar() {
 		window.location.replace("/");
 	};
 	return (
-		<div>
+		<div style={{ textDecoration: "none" }}>
 			<div className='h-10 w-screen bg-transparent flex justify-around items-center  '>
 				<div className='flex space-x-4'>
 					<div>
@@ -18,7 +19,7 @@ function Navbar() {
 							to='/'
 							className='font-ArchitectDaughter font-extrabold text-red-700 '
 						>
-							ARCADEBLOG
+							LUSTEK
 						</Link>
 					</div>
 					<div>
@@ -43,27 +44,54 @@ function Navbar() {
 				</div>
 				<div className='flex space-x-2'>
 					{user ? (
-						<div className='flex space-x-2'>
-							<div
-								className='px-3 rounded-lg bg-zinc-900 text-white cursor-pointer'
-								onClick={handlelogout}
-							>
-								logout
-							</div>
-							<Link to='setting'>
-								<div className=' rounded-full overflow-hidden h-6 w-6  text-white'>
-									<img
-										src={PF + user.profilePic}
-										alt=''
-										className='object-cover h-full w-full'
-									/>
+						<div className='flex space-x-2 relative'>
+							{/* <Link to='setting'> */}
+							<Menu>
+								<Menu.Button className=' rounded-full overflow-hidden h-6 w-6  text-fuchsia-800 bg-red-400 text-center capitalize font-extrabold'>
+									{user.profilePic !== "" ? (
+										<img
+											src={PF + user.profilePic}
+											alt=''
+											className='object-cover h-full w-full'
+										/>
+									) : (
+										user.username.slice(0, 1)
+									)}
+								</Menu.Button>
+								<div className='absolute mt-6 text-gray-600 bg-gray-50  font-bold'>
+									<Menu.Items className={`p-4`}>
+										<Menu.Item>
+											{({ active }) => (
+												<Link
+													className={`px-3 ${active && "bg-blue-500"}`}
+													href='/account-settings'
+													to='setting/profile'
+												>
+													Profile
+												</Link>
+											)}
+										</Menu.Item>
+										<Menu.Item>
+											{({ active }) => (
+												<div
+													className={`px-3 ${active && "bg-blue-500"}`}
+													onClick={handlelogout}
+												>
+													logout
+												</div>
+											)}
+										</Menu.Item>
+									</Menu.Items>
 								</div>
-							</Link>
+							</Menu>
+							{/* </Link> */}
 						</div>
 					) : (
 						<div className='flex space-x-2'>
-							<div>
-								<Link to='login'>Login</Link>
+							<div className='text-white'>
+								<Link to='login' style={{ textDecoration: "none" }}>
+									Login
+								</Link>
 							</div>
 							<div className='px-3 rounded-lg bg-zinc-900 text-white'>
 								<Link to='signup'>Signup</Link>

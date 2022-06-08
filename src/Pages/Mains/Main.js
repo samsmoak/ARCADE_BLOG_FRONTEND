@@ -48,7 +48,7 @@ function Main() {
 
 	return (
 		<div>
-			<div className="h-small1 w-screen bg-[url('https://images.unsplash.com/photo-1529998274859-64a3872a3706?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80')] bg-cover">
+			<div className='h-small1 w-screen bg-[url(https://cdn.pixabay.com/photo/2022/05/22/15/02/pizza-7213599_1280.jpgs)] bg-cover'>
 				<div className='w-full flex flex-col justify-center items-center h-[calc(100%-10rem)] space-y-16 '>
 					<p className='text-7xl font-display text-rose-500'>
 						Thoughts, stories and

@@ -6,3 +6,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body,
+#exclude {
+	text-decoration: none;
+	color: black;
+	cursor: auto;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: none;
+	color: white;
+}

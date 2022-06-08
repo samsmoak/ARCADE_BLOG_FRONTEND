@@ -26,9 +26,9 @@ function Login() {
 		}
 	};
 	return (
-		<div className=' w-screen h-screen  bg-[url("https://cdn.pixabay.com/photo/2021/04/26/01/39/trees-6207925_1280.jpg")] bg-cover flex justify-center items-center '>
-			<div className='h-small2 w-96 bg-white bg-opacity-50 rounded-xl py-10 px-4 border-t-2 border-r-4 border-b-2 border-opacity-30 border-gray-700'>
-				<div className='font-Yanone_Kaffeesatz  text-4xl text-rose-500 uppercase text-center w-full'>
+		<div className=' w-screen h-screen   bg-cover flex justify-center items-center '>
+			<div className='h-small2 w-96 bg-gradient-to-br from-pink-500 via-fuchsia-800 to-violet-700 bg-white bg-opacity-50 rounded-xl py-10 px-4 border-t-2 border-r-4 border-b-2 border-opacity-30 border-gray-700'>
+				<div className='font-Yanone_Kaffeesatz  text-4xl text-black uppercase text-center w-full'>
 					Login into your account
 				</div>
 				<form onSubmit={handleSubmit}>
