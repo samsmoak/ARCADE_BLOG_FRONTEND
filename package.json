@@ -25,11 +25,14 @@
 		"html-react-parser": "^1.4.12",
 		"react": "^17.0.2",
 		"react-bootstrap": "^2.4.0",
+		"react-card-flip": "^1.1.5",
 		"react-dom": "^17.0.2",
 		"react-doodle": "^1.0.0",
 		"react-router-dom": "^6.2.1",
 		"react-scripts": "5.0.0",
 		"react-slick": "^0.29.0",
+		"react-spring": "^9.4.5",
+		"swiper": "^8.2.3",
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
@@ -64,6 +67,5 @@
 		"postcss": "^8.4.7",
 		"raw-loader": "^4.0.2",
 		"tailwindcss": "^3.0.23"
-	},
-	"proxy": "http://localhost:5000/api/"
+	}
 }

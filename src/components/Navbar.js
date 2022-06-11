@@ -17,24 +17,28 @@ function Navbar() {
 					<div>
 						<Link
 							to='/'
-							className='font-ArchitectDaughter font-extrabold text-red-700 '
+							className='font-ArchitectDaughter font-extrabold text-red-700 hover:text-red-700 '
 						>
 							LUSTEK
 						</Link>
 					</div>
 					<div>
-						<Link to='write' className='font-shizuru  '>
+						<Link to='write' className='font-shizuru text-black  '>
 							FEATURE
 						</Link>
 					</div>
 
 					<div>
-						<Link to='write' className='font-shizuru  '>
-							MEMBER
+						<Link to='team' className='font-shizuru text-black  '>
+							Team
 						</Link>
 					</div>
 					<div>
-						<Link to='write' className='font-shizuru text-lime-700 '>
+						<Link
+							to='write'
+							className='font-shizuru text-lime-700 hover:text-lime-700 '
+							style={{ textDecoration: "none" }}
+						>
 							WRITE
 						</Link>
 					</div>
@@ -89,12 +93,18 @@ function Navbar() {
 					) : (
 						<div className='flex space-x-2'>
 							<div className='text-white'>
-								<Link to='login' style={{ textDecoration: "none" }}>
+								<Link
+									to='login'
+									style={{ textDecoration: "none" }}
+									className='text-black'
+								>
 									Login
 								</Link>
 							</div>
 							<div className='px-3 rounded-lg bg-zinc-900 text-white'>
-								<Link to='signup'>Signup</Link>
+								<Link to='signup' className='text-white'>
+									Signup
+								</Link>
 							</div>
 						</div>
 					)}
