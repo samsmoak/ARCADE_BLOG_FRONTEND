@@ -34,7 +34,9 @@ function App() {
 
 			<BrowserRouter>
 				{/* <React.Suspense fallback={"loading"}> */}
-				<Navbar />
+				<div className='px-12'>
+					<Navbar />
+				</div>
 				<Routes>
 					<Route path='/' element={<Homepage />} />
 					<Route path='/main' element={<Main />} />

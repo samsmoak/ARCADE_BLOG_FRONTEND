@@ -11,8 +11,8 @@ function Navbar() {
 		window.location.replace("/");
 	};
 	return (
-		<div style={{ textDecoration: "none" }}>
-			<div className='h-10 w-screen bg-transparent flex justify-around items-center  '>
+		<div style={{ textDecoration: "none" }} className=' bg-paper-600  '>
+			<div className='h-10 w-screen  flex justify-around items-center   '>
 				<div className='flex space-x-4'>
 					<div>
 						<Link
@@ -23,20 +23,20 @@ function Navbar() {
 						</Link>
 					</div>
 					<div>
-						<Link to='write' className='font-shizuru text-black  '>
-							FEATURE
+						<Link to='write' className='text-xs font-bold  text-black  '>
+							Feature
 						</Link>
 					</div>
 
 					<div>
-						<Link to='team' className='font-shizuru text-black  '>
+						<Link to='team' className='text-xs font-bold text-black  '>
 							Team
 						</Link>
 					</div>
 					<div>
 						<Link
 							to='write'
-							className='font-shizuru text-lime-700 hover:text-lime-700 '
+							className='text-xs font-bold  text-lime-700 hover:text-lime-700 '
 							style={{ textDecoration: "none" }}
 						>
 							WRITE

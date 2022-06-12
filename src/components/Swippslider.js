@@ -23,34 +23,191 @@ function Swippslider() {
 				}}
 				navigation={true}
 				modules={[Pagination, Navigation]}
-				className='h-96 bg-neutral-800'
+				className='h-96 bg-white'
 			>
-				<SwiperSlide className='w-96 h-96 bg-stone-400 rounded-3xl '>
-					Slide 1
+				<SwiperSlide className='w-96 h-96  py-6 px-6  rounded-3xl '>
+					<div className='bg-white shadow-md h-full  border-t-4 border-gray-700'>
+						<div className='flex justify-center w-full -translate-y-4'>
+							<div className='h-14 w-14 overflow-hidden rounded-full '>
+								<img src={require("../images/samson.png")} alt='' />
+							</div>
+						</div>
+						<div className='flex flex-col items-center'>
+							<h4 className='font-bold text-sm'>alex</h4>
+							<h4 className='font-semibold text-base'>software engineer</h4>
+							<h4 className='font-bold text-sm'>google </h4>
+						</div>
+
+						<div className='w-full px-2'>
+							<p className='text-sm font-normal text-gray-500'>
+								lorem views for each state in your application, and React will
+								efficiently update and render just the right components when
+								your data changes. Declarative views make your code more
+								predictable and easier to debug.
+							</p>
+						</div>
+					</div>
 				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-yellow-400 rounded-3xl '>
-					Slide 2
+				<SwiperSlide className='w-96 h-96  py-6 px-6  rounded-3xl '>
+					<div className='bg-white shadow-md h-full  border-t-4 border-gray-700'>
+						<div className='flex justify-center w-full -translate-y-4'>
+							<div className='h-14 w-14 overflow-hidden rounded-full '>
+								<img src={require("./Data/sampic.jpg")} alt='' />
+							</div>
+						</div>
+						<div className='flex flex-col items-center'>
+							<h4 className='font-bold text-sm'>alex</h4>
+							<h4 className='font-semibold text-base'>software engineer</h4>
+							<h4 className='font-bold text-sm'>google </h4>
+						</div>
+
+						<div className='w-full px-2'>
+							<p className='text-sm font-normal text-gray-500'>
+								lorem views for each state in your application, and React will
+								efficiently update and render just the right components when
+								your data changes. Declarative views make your code more
+								predictable and easier to debug.
+							</p>
+						</div>
+					</div>
 				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-blue-400 rounded-2xl'>
-					Slide 3
+				<SwiperSlide className='w-96 h-96  py-6 px-6  rounded-3xl '>
+					<div className='bg-white shadow-md h-full  border-t-4 border-gray-700'>
+						<div className='flex justify-center w-full -translate-y-4'>
+							<div className='h-14 w-14 overflow-hidden rounded-full '>
+								<img src={require("../images/dav.jpeg")} alt='' />
+							</div>
+						</div>
+						<div className='flex flex-col items-center'>
+							<h4 className='font-bold text-sm'>alex</h4>
+							<h4 className='font-semibold text-base'>software engineer</h4>
+							<h4 className='font-bold text-sm'>google </h4>
+						</div>
+
+						<div className='w-full px-2'>
+							<p className='text-sm font-normal text-gray-500'>
+								lorem views for each state in your application, and React will
+								efficiently update and render just the right components when
+								your data changes. Declarative views make your code more
+								predictable and easier to debug.
+							</p>
+						</div>
+					</div>
 				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-lime-400 rounded-2xl'>
-					Slide 4
+				<SwiperSlide className='w-96 h-96  py-6 px-6  rounded-3xl '>
+					<div className='bg-white shadow-md h-full  border-t-4 border-gray-700'>
+						<div className='flex justify-center w-full -translate-y-4'>
+							<div className='h-14 w-14 overflow-hidden rounded-full '>
+								<img src={require("../images/indian.jpeg")} alt='' />
+							</div>
+						</div>
+						<div className='flex flex-col items-center'>
+							<h4 className='font-bold text-sm'>alex</h4>
+							<h4 className='font-semibold text-base'>software engineer</h4>
+							<h4 className='font-bold text-sm'>google </h4>
+						</div>
+
+						<div className='w-full px-2'>
+							<p className='text-sm font-normal text-gray-500'>
+								lorem views for each state in your application, and React will
+								efficiently update and render just the right components when
+								your data changes. Declarative views make your code more
+								predictable and easier to debug.
+							</p>
+						</div>
+					</div>
 				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-purple-400 rounded-2xl'>
-					Slide 5
+				<SwiperSlide className='w-96 h-96  py-6 px-6  rounded-3xl '>
+					<div className='bg-white shadow-md h-full  border-t-4 border-gray-700'>
+						<div className='flex justify-center w-full -translate-y-4'>
+							<div className='h-14 w-14 overflow-hidden rounded-full '>
+								<img src={require("./Data/sampic.jpg")} alt='' />
+							</div>
+						</div>
+						<div className='flex flex-col items-center'>
+							<h4 className='font-bold text-sm'>alex</h4>
+							<h4 className='font-semibold text-base'>software engineer</h4>
+							<h4 className='font-bold text-sm'>google </h4>
+						</div>
+
+						<div className='w-full px-2'>
+							<p className='text-sm font-normal text-gray-500'>
+								lorem views for each state in your application, and React will
+								efficiently update and render just the right components when
+								your data changes. Declarative views make your code more
+								predictable and easier to debug.
+							</p>
+						</div>
+					</div>
 				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-yellow-400 rounded-2xl'>
-					Slide 6
+				<SwiperSlide className='w-96 h-96  py-6 px-6  rounded-3xl '>
+					<div className='bg-white shadow-md h-full  border-t-4 border-gray-700'>
+						<div className='flex justify-center w-full -translate-y-4'>
+							<div className='h-14 w-14 overflow-hidden rounded-full '>
+								<img src={require("./Data/sampic.jpg")} alt='' />
+							</div>
+						</div>
+						<div className='flex flex-col items-center'>
+							<h4 className='font-bold text-sm'>alex</h4>
+							<h4 className='font-semibold text-base'>software engineer</h4>
+							<h4 className='font-bold text-sm'>google </h4>
+						</div>
+
+						<div className='w-full px-2'>
+							<p className='text-sm font-normal text-gray-500'>
+								lorem views for each state in your application, and React will
+								efficiently update and render just the right components when
+								your data changes. Declarative views make your code more
+								predictable and easier to debug.
+							</p>
+						</div>
+					</div>
 				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-stone-400 rounded-2xl'>
-					Slide 7
+				<SwiperSlide className='w-96 h-96  py-6 px-6  rounded-3xl '>
+					<div className='bg-white shadow-md h-full  border-t-4 border-gray-700'>
+						<div className='flex justify-center w-full -translate-y-4'>
+							<div className='h-14 w-14 overflow-hidden rounded-full '>
+								<img src={require("./Data/sampic.jpg")} alt='' />
+							</div>
+						</div>
+						<div className='flex flex-col items-center'>
+							<h4 className='font-bold text-sm'>alex</h4>
+							<h4 className='font-semibold text-base'>software engineer</h4>
+							<h4 className='font-bold text-sm'>google </h4>
+						</div>
+
+						<div className='w-full px-2'>
+							<p className='text-sm font-normal text-gray-500'>
+								lorem views for each state in your application, and React will
+								efficiently update and render just the right components when
+								your data changes. Declarative views make your code more
+								predictable and easier to debug.
+							</p>
+						</div>
+					</div>
 				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-rose-400 rounded-2xl'>
-					Slide 8
-				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-pink-400 rounded-2xl'>
-					Slide 9
+				<SwiperSlide className='w-96 h-96  py-6 px-6  rounded-3xl '>
+					<div className='bg-white shadow-md h-full  border-t-4 border-gray-700'>
+						<div className='flex justify-center w-full -translate-y-4'>
+							<div className='h-14 w-14 overflow-hidden rounded-full '>
+								<img src={require("./Data/sampic.jpg")} alt='' />
+							</div>
+						</div>
+						<div className='flex flex-col items-center'>
+							<h4 className='font-bold text-sm'>alex</h4>
+							<h4 className='font-semibold text-base'>software engineer</h4>
+							<h4 className='font-bold text-sm'>google </h4>
+						</div>
+
+						<div className='w-full px-2'>
+							<p className='text-sm font-normal text-gray-500'>
+								lorem views for each state in your application, and React will
+								efficiently update and render just the right components when
+								your data changes. Declarative views make your code more
+								predictable and easier to debug.
+							</p>
+						</div>
+					</div>
 				</SwiperSlide>
 			</Swiper>
 		</div>
