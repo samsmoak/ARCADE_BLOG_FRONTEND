@@ -15,7 +15,7 @@ function Carouselcom() {
 					<Carousel
 						activeIndex={index}
 						onSelect={handleSelect}
-						className='mt-14 border-b-2 hover:border-blue-600 '
+						className='mt-14 border-b-2 '
 						// onChange={setInView}
 						variant='dark'
 						images={``}

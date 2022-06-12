@@ -21,6 +21,7 @@ import Profile from "./Pages/Setting/profile";
 import Dashboard from "./Pages/Setting/Dashboard";
 import RecentPost from "./Pages/Mains/RecentPost";
 import Homepage from "./Pages/HomePage/Homepage";
+import Team from "./Pages/Team/Team";
 
 function App() {
 	const { user } = useContext(Context);
@@ -33,10 +34,13 @@ function App() {
 
 			<BrowserRouter>
 				{/* <React.Suspense fallback={"loading"}> */}
-				<Navbar />
+				<div className='px-12'>
+					<Navbar />
+				</div>
 				<Routes>
 					<Route path='/' element={<Homepage />} />
 					<Route path='/main' element={<Main />} />
+					<Route path='/team' element={<Team />} />
 					<Route path='login' element={<Login />} />
 					<Route path='write' element={user ? <Write /> : <Signup />} />
 					<Route path='signup' element={<Signup />} />

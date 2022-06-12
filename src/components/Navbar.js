@@ -11,30 +11,34 @@ function Navbar() {
 		window.location.replace("/");
 	};
 	return (
-		<div style={{ textDecoration: "none" }}>
-			<div className='h-10 w-screen bg-transparent flex justify-around items-center  '>
+		<div style={{ textDecoration: "none" }} className=' bg-paper-600  '>
+			<div className='h-10 w-screen  flex justify-around items-center   '>
 				<div className='flex space-x-4'>
 					<div>
 						<Link
 							to='/'
-							className='font-ArchitectDaughter font-extrabold text-red-700 '
+							className='font-ArchitectDaughter font-extrabold text-red-700 hover:text-red-700 '
 						>
 							LUSTEK
 						</Link>
 					</div>
 					<div>
-						<Link to='write' className='font-shizuru  '>
-							FEATURE
+						<Link to='write' className='text-xs font-bold  text-black  '>
+							Feature
 						</Link>
 					</div>
 
 					<div>
-						<Link to='write' className='font-shizuru  '>
-							MEMBER
+						<Link to='team' className='text-xs font-bold text-black  '>
+							Team
 						</Link>
 					</div>
 					<div>
-						<Link to='write' className='font-shizuru text-lime-700 '>
+						<Link
+							to='write'
+							className='text-xs font-bold  text-lime-700 hover:text-lime-700 '
+							style={{ textDecoration: "none" }}
+						>
 							WRITE
 						</Link>
 					</div>
@@ -89,12 +93,18 @@ function Navbar() {
 					) : (
 						<div className='flex space-x-2'>
 							<div className='text-white'>
-								<Link to='login' style={{ textDecoration: "none" }}>
+								<Link
+									to='login'
+									style={{ textDecoration: "none" }}
+									className='text-black'
+								>
 									Login
 								</Link>
 							</div>
 							<div className='px-3 rounded-lg bg-zinc-900 text-white'>
-								<Link to='signup'>Signup</Link>
+								<Link to='signup' className='text-white'>
+									Signup
+								</Link>
 							</div>
 						</div>
 					)}
