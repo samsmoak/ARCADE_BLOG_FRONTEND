@@ -5,31 +5,32 @@ import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import API from "../../API";
+import parse from "html-react-parser";
 
-function Single() {
+function Recentsingle() {
 	const location = useLocation();
-	const path = location.pathname.split("/")[2];
+	const path = location.pathname.split("/")[3];
 	const [post, setPost] = useState({});
 	const PF = "http://localhost:5000/images/";
 	const { user } = useContext(Context);
 
 	useEffect(() => {
 		const getPost = async () => {
-			const res = await API.get("/posts/recent/bat/${}" + path);
+			const res = await API.get("/posts/" + path);
 			setPost(res.data);
 		};
 
 		getPost();
 	}, [path]);
 
-	// const handleDelete = async () => {
-	// 	try {
-	// 		await axios.delete(`/posts/${post._id}`, {
-	// 			data: { username: user.username },
-	// 		});
-	// 		window.location.replace("/");
-	// 	} catch (err) {}
-	// };
+	const handleDelete = async () => {
+		try {
+			await axios.delete(`/posts/${post._id}`, {
+				data: { username: user.username },
+			});
+			window.location.replace("/");
+		} catch (err) {}
+	};
 
 	return (
 		<div className='flex justify-center items-center w-screen mt-16'>
@@ -54,7 +55,7 @@ function Single() {
 							</Link>
 						</div>
 
-						{/* <div className='w-full flex justify-end '>
+						<div className='w-full flex justify-end '>
 							{post.username === user?.username && (
 								<div className='flex px-2 space-x-2'>
 									<Link
@@ -71,10 +72,10 @@ function Single() {
 									</button>
 								</div>
 							)}
-						</div> */}
+						</div>
 					</div>
 					<div>
-						<p>{post.desc}</p>
+						<p>{parse(post.desc)}</p>
 					</div>
 				</div>
 			</div>
@@ -82,4 +83,4 @@ function Single() {
 	);
 }
 
-export default Single;
+export default Recentsingle;

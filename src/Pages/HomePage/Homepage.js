@@ -49,7 +49,7 @@ function Homepage() {
 	// });
 
 	return (
-		<div className='py-10 px-12'>
+		<div className='pt-10 px-12'>
 			<div className='shadow-xl'>
 				<div className='grid grid-cols-2  bg-[url("/src/images/firstbg.svg")] bg-no-repeat object-contain bg-center '>
 					<div className='w-full h-small1  flex justify-center items-center space-x-2 object-cover'>
@@ -97,7 +97,7 @@ function Homepage() {
 					</div>
 				</div>
 
-				<div className=' flex items-center flex-col p-28 bg-rose-400 '>
+				<div className=' flex items-center flex-col p-28  '>
 					<p className='text-2xl text-black font-extrabold'>
 						Companies maximizing sales productivity with Luxstek
 					</p>
@@ -346,74 +346,78 @@ function Homepage() {
 						</button>
 					</div>
 				</div>
-				<div className='  py-10 w-screen bg-mamba-100 grid  lg:grid-cols-4 place-items-center content-center text-white '>
+				<div className='  py-10 w-full  grid  lg:grid-cols-4 place-items-center  text-black '>
 					<div className='col-span-1 px-4 self-center'>
 						<h6 className='font-medium text-indigo-400'>RESOURCES</h6>
-						<h3 className='font-bold text-3xl font-sans'>Company Insights.</h3>
+						<h3 className='font-extrabold text-lg font-sans'>
+							Company Insights.
+						</h3>
 						<p className='font-light text-lg'>
 							Learn more about how Instabase is revolutionizing operational
 							productivity.
 						</p>
 					</div>
-					<div className=' col-span-3  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-black '>
-						<div className='  bg-paper-400 col-span-1 space-y-4 pb-2  '>
-							<div className=''>
-								<img
-									src='https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80'
-									alt=''
-								/>
+					<div className='w-full col-span-3 px-3'>
+						<div className='   grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-black '>
+							<div className='   col-span-1 space-y-4 pb-2 shadow-sm  '>
+								<div className=''>
+									<img
+										src='https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80'
+										alt=''
+									/>
+								</div>
+								<div className='p-3'>
+									<h5 className='capitalize text-sm font-bold text-purple-800 '>
+										creating more to tackle covid crisis
+									</h5>
+									<p className='font-light text-sm'>
+										lorem views for each state in your application, and React
+										will efficiently update and render just the right components
+										when your data changes. Declarative views make your code
+										more predictable and easier to debug.
+									</p>
+									<button>learn more</button>
+								</div>
 							</div>
-							<div className='p-3'>
-								<h5 className='capitalize text-xl font-medium'>
-									creating more to tackle covid crisis
-								</h5>
-								<p className='font-light'>
-									lorem views for each state in your application, and React will
-									efficiently update and render just the right components when
-									your data changes. Declarative views make your code more
-									predictable and easier to debug.
-								</p>
-								<button>learn more</button>
+							<div className='    col-span-1 space-y-4 pb-2 shadow-sm '>
+								<div className=''>
+									<img
+										src='https://images.unsplash.com/photo-1497366216548-37526070297c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2301&q=80'
+										alt=''
+									/>
+								</div>
+								<div className='p-3'>
+									<h5 className='capitalize text-sm font-bold text-purple-800'>
+										creating more to tackle covid crisis
+									</h5>
+									<p className='font-light text-sm'>
+										lorem views for each state in your application, and React
+										will efficiently update and render just the right components
+										when your data changes. Declarative views make your code
+										more predictable and easier to debug.
+									</p>
+									<button>learn more</button>
+								</div>
 							</div>
-						</div>
-						<div className='   bg-paper-200 col-span-1 space-y-4 pb-2 '>
-							<div className=''>
-								<img
-									src='https://images.unsplash.com/photo-1497366216548-37526070297c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2301&q=80'
-									alt=''
-								/>
-							</div>
-							<div className='p-3'>
-								<h5 className='capitalize text-xl font-medium'>
-									creating more to tackle covid crisis
-								</h5>
-								<p className='font-light'>
-									lorem views for each state in your application, and React will
-									efficiently update and render just the right components when
-									your data changes. Declarative views make your code more
-									predictable and easier to debug.
-								</p>
-								<button>learn more</button>
-							</div>
-						</div>
-						<div className='  bg-paper-100 col-span-1 space-y-4 pb-2 '>
-							<div className=''>
-								<img
-									src='https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2370&q=80'
-									alt=''
-								/>
-							</div>
-							<div className='p-3'>
-								<h5 className='capitalize text-xl font-medium'>
-									creating more to tackle covid crisis
-								</h5>
-								<p className='font-light'>
-									lorem views for each state in your application, and React will
-									efficiently update and render just the right components when
-									your data changes. Declarative views make your code more
-									predictable and easier to debug.
-								</p>
-								<button>learn more</button>
+							<div className='  bg-paper-100 col-span-1 space-y-4 pb-2 shadow-sm '>
+								<div className=''>
+									<img
+										src='https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2370&q=80'
+										alt=''
+									/>
+								</div>
+								<div className='p-3'>
+									<h5 className='capitalize text-sm font-bold text-purple-900'>
+										creating more to tackle covid crisis
+									</h5>
+									<p className='font-light text-sm'>
+										lorem views for each state in your application, and React
+										will efficiently update and render just the right components
+										when your data changes. Declarative views make your code
+										more predictable and easier to debug.
+									</p>
+									<button>learn more</button>
+								</div>
 							</div>
 						</div>
 					</div>

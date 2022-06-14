@@ -1,36 +1,67 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import parse from "html-react-parser";
+import { Context } from "../../context/Context";
 
-function post({ post }) {
+function Post({ post }) {
+	// const { user } = useContext(Context);
+	const { user } = useContext(Context);
 	const PF = "http://localhost:5000/images/";
 	return (
-		<div>
-			<div className='w-72 h-96 bg-slate-600 rounded-6xl overflow-hidden relative '>
-				{console.log(post.photo)}
-				{post.photo && (
-					<img
-						src={PF + post.photo}
-						alt=''
-						className='h-full w-full object-cover '
-					/>
-				)}
-				<div className='z-10 text-white absolute left-0 right-0 bottom-0 top-0 flex flex-col ml-5 justify-end py-5'>
-					<Link to={`/post/${post._id}`} style={{ textDecoration: "none" }}>
-						<h1 className='text-center w-full font-extrabold text-2xl text-white p-3  bg-bluelight-300 bg-opacity-70 hover:bg-opacity-100'>
-							{post.title}
-						</h1>
-					</Link>
-					<h4 className='text-center w-full text-gray-400'>
-						{new Date(post.createdAt).toDateString()}
-					</h4>
-					<p className='w-full text-gray-500 h-36 overflow-hidden '>
-						{post.desc}
-					</p>
+		<div className=' '>
+			<div className='bg-white w-72   overflow-hidden shadow-md rounded-2xl'>
+				<div className='overflow-hidden h-48'>
+					{post.photo && (
+						<img
+							src={PF + post.photo}
+							alt=''
+							className='h-full w-full object-cover '
+						/>
+					)}
+				</div>
+				<div className=' text-black  flex flex-col justify-end px-3 py-4 space-y-4'>
+					<div>
+						<Link to={`/post/${post._id}`} style={{ textDecoration: "none" }}>
+							<h1 className=' w-full font-extrabold text-sm text-black   bg-bluelight-300 bg-opacity-70 hover:bg-opacity-100'>
+								{post.title}
+							</h1>
+						</Link>
+					</div>
+					<div className='space-y-2'>
+						<div>
+							<div className='flex space-x-2'>
+								<div className=''>
+									{post.profilePic == "" ? (
+										<img
+											src={PF + post.profilePic}
+											alt=''
+											className='object-cover h-full w-full'
+										/>
+									) : (
+										<div className='rounded-full h-6 w-6 bg-rose-400 text-sm font-bold capitalize flex justify-center items-center'>
+											{post.username.slice(0, 1)}
+										</div>
+									)}
+								</div>
+								<div className='w-full flex item-center mt-1'>
+									<Link
+										to={`/?user=${post.username}`}
+										className='link  text-xs font-thin text-gray-400'
+										style={{ textDecoration: "none" }}
+									>
+										<b> {post.username}</b>
+									</Link>
+								</div>
+							</div>
+						</div>
+						<h4 className='w-full text-gray-500 text-xs'>
+							{new Date(post.createdAt).toDateString()}
+						</h4>
+					</div>
 				</div>
 			</div>
 		</div>
 	);
 }
 
-export default post;
+export default Post;

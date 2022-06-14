@@ -6,19 +6,20 @@ function Posts(props) {
 	return (
 		<div>
 			{/* featured posts */}
-			<div className='flex justify-center w-screen py-10'>
-				<div className='grid  grid-flow-col  space-x-8 h-small2 bg-slate-700  '>
+			<div className='flex justify-center w-screen py-10 bg-gradient-to-bl from-pink-500 via-fuchsia-800 to-violet-700 '>
+				<div className='grid grid-cols-1 md:grid-cols-3 gap-5  lg:space-x-8 lg:h-small2  '>
 					{props.recent.map((p) => {
 						return <RecentPost recent={p} key={p._id} />;
 					})}
 				</div>
 			</div>
+			<div className='bg-[url("/src/images/pinker.svg")] h-60 w-full  bg-origin-content '></div>
 			{/* posts authors sessions */}
-			<div className='w-screen   flex justify-center '>
+			<div className='bg-pink-600 w-screen   flex justify-center py-10 '>
 				<div className='w-5/6 '>
-					<div className='grid grid-flow-col '>
-						<div>
-							<p className='text-5xl font-extralight font-redressed w-2/4 text-rose-600'>
+					<div className=' grid grid-flow-col '>
+						<div className=''>
+							<p className='text-5xl font-bold w-2/4 text-black '>
 								see what we've writen lately
 							</p>
 						</div>
@@ -54,7 +55,7 @@ function Posts(props) {
 								</div>
 							</div>
 							<div className=' flex justify-center'>
-								<p className='text-xs font-light text-rose-400'>
+								<p className='text-xs font-light text-rose-400 py-2'>
 									meet our top authors
 								</p>
 							</div>
@@ -63,7 +64,8 @@ function Posts(props) {
 				</div>
 			</div>
 			{/* post of late */}
-			<div className='flex w-screen py-8 justify-center'>
+			<div className='bg-[url("/src/images/fogazi.svg")] w-full h-96'></div>
+			<div className='flex w-screen py-8 justify-center bg-violet-700 '>
 				<div className=' grid grid-flow-col gap-4'>
 					<div className='w-small1 h-96 bg-slate-600 rounded-6xl overflow-hidden relative transition-all duration-200 hover:-translate-y-2 '>
 						<img
@@ -91,11 +93,12 @@ function Posts(props) {
 					</div>
 				</div>
 			</div>
+			<div className='bg-[url("/src/images/diva.svg")] w-full h-96'></div>
 			{/* rest of thee posts */}
 			<div>
-				<div className=' py-4 w-screen '>
+				<div className=' py-40 w-screen bg-gray-100  '>
 					<div className=' flex items-center justify-center'>
-						<div className='grid grid-cols-1 md:grid-cols-3 gap-5 overflow-hidden h-bigxxx bg-gray-600   '>
+						<div className='grid grid-cols-1 md:grid-cols-3 gap-5 overflow-hidden  '>
 							{props.posts.map((p) => {
 								return <Post post={p} key={p._id} />;
 							})}
