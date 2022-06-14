@@ -22,6 +22,7 @@ import Dashboard from "./Pages/Setting/Dashboard";
 import RecentPost from "./Pages/Mains/RecentPost";
 import Homepage from "./Pages/HomePage/Homepage";
 import Team from "./Pages/Team/Team";
+import Recentsingle from "./Pages/Single/RecentSingle";
 
 function App() {
 	const { user } = useContext(Context);
@@ -38,8 +39,8 @@ function App() {
 					<Navbar />
 				</div>
 				<Routes>
-					<Route path='/' element={<Homepage />} />
-					<Route path='/main' element={<Main />} />
+					<Route path='/homepage' element={<Homepage />} />
+					<Route path='/' element={<Main />} />
 					<Route path='/team' element={<Team />} />
 					<Route path='login' element={<Login />} />
 					<Route path='write' element={user ? <Write /> : <Signup />} />
@@ -49,7 +50,7 @@ function App() {
 						<Route path='dashboard' element={<Dashboard />} />
 					</Route>
 					<Route path='/post/:postId' element={<Single />} />
-					<Route path='/recent/:recentId' element={<RecentPost />} />
+					<Route path='/recent/bat/:recentId' element={<Recentsingle />} />
 
 					<Route path='/update/:postId' element={<Update />} />
 				</Routes>

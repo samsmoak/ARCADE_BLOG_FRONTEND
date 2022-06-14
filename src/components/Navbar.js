@@ -11,7 +11,7 @@ function Navbar() {
 		window.location.replace("/");
 	};
 	return (
-		<div style={{ textDecoration: "none" }} className=' bg-paper-600  '>
+		<div style={{ textDecoration: "none" }} className=' bg-white shadow-sm  '>
 			<div className='h-10 w-screen  flex justify-around items-center   '>
 				<div className='flex space-x-4'>
 					<div>

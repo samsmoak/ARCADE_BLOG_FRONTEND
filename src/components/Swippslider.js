@@ -121,7 +121,7 @@ function Swippslider() {
 					<div className='bg-white shadow-md h-full  border-t-4 border-gray-700'>
 						<div className='flex justify-center w-full -translate-y-4'>
 							<div className='h-14 w-14 overflow-hidden rounded-full '>
-								<img src={require("./Data/sampic.jpg")} alt='' />
+								<img src={require("../images/yashee.jpeg")} alt='' />
 							</div>
 						</div>
 						<div className='flex flex-col items-center'>
