@@ -49,7 +49,7 @@ function Homepage() {
 	// });
 
 	return (
-		<div className='md:pt-10 md:px-12'>
+		<div className=' md:pt-20 md:px-12'>
 			<div className='shadow-xl'>
 				<div className='grid grid-cols-1 sm:grid-cols-2  bg-[url("/src/images/goog.svg")] bg-no-repeat object-contain bg-center '>
 					<div className=' px-4 w-full h-small1  flex justify-center items-center space-x-2 object-cover'>

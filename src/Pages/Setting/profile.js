@@ -42,14 +42,14 @@ function Profile() {
 
 	return (
 		<div>
-			<div className='h-screen w-small1'>
+			<div className='lg:h-screen lg:w-small1  '>
 				<div className='w-full py-10'>
 					<div className='w-full flex flex-col justify-center items-center space-y-3'>
-						<div className='h-28 w-28 rounded-full overflow-hidden  z-50 bg-slate-500'>
+						<div className='h-28 w-28 rounded-full overflow-hidden  z-20 bg-slate-500'>
 							<img
 								src={file ? URL.createObjectURL(file) : PF + user.profilePic}
 								alt=''
-								className='object-cover h-full w-full'
+								className=' h-full w-full'
 							/>
 						</div>
 

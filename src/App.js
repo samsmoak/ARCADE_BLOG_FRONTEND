@@ -28,17 +28,18 @@ function App() {
 	const { user } = useContext(Context);
 	// let element = useRoutes(routes);
 	return (
-		<div>
+		<div className='w-screen'>
 			{/* <BrowserRouter>
 				<Router>{element}</Router>
 			</BrowserRouter> */}
 
 			<BrowserRouter>
 				{/* <React.Suspense fallback={"loading"}> */}
-				<div className=''>
+				<div>
 					<Navbar />
 				</div>
-				<Routes>
+
+				<Routes className=''>
 					<Route path='/' element={<Homepage />} />
 					<Route path='mainblog' element={<Main />} />
 					<Route path='team' element={<Team />} />
@@ -54,6 +55,7 @@ function App() {
 
 					<Route path='/update/:postId' element={<Update />} />
 				</Routes>
+
 				{/* </React.Suspense> */}
 			</BrowserRouter>
 			{/* <Layout /> */}

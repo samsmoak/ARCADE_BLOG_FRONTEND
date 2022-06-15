@@ -41,8 +41,8 @@ function Write() {
 
 	return (
 		<div>
-			<div className='w-screen h-screen flex justify-center items-center bg-[url("https://cdn.pixabay.com/photo/2020/03/25/13/03/house-4967221_1280.jpg")]'>
-				<div className='w-small1 bg-blue-800  px-6 py-4'>
+			<div className='pt-40 w-screen h-screen flex justify-center items-center bg-[url("/src/images/writer.svg")]'>
+				<div className='w-11/12 lg:w-small1 bg-mamba-100 px-2  lg:px-6 py-4'>
 					<form className=' space-y-6' onSubmit={handleSubmit}>
 						<div className='flex flex-col'>
 							<label
@@ -62,7 +62,7 @@ function Write() {
 								}}
 							></input>
 						</div>
-						<div className='flex flex-col w-40 '>
+						<div className='flex flex-col  '>
 							<label
 								for='title'
 								className='font-ArchitectDaughter  font-bold  text-xl text-amber-500'
@@ -83,7 +83,7 @@ function Write() {
 							<div className='font-ArchitectDaughter  font-bold  text-xl text-rose-300'>
 								description
 							</div>
-							<div className='overflow-scroll h-96'>
+							<div className='overflow-scroll h-40 sm:h-96'>
 								<CKEditor
 									editor={ClassicEditor}
 									data={desc}
@@ -101,6 +101,35 @@ function Write() {
 							</button>
 						</div>
 					</form>
+				</div>
+			</div>
+			<div className='w-full flex justify-center items-center py-24'>
+				<div className='w-4/5 h-96 '>
+					<div className='h-full w-full md:w-small1 md:h-small2 overflow-hidden relative '>
+						<img
+							src='https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80'
+							alt=''
+							className=' w-full h-full object-cover'
+						/>
+						<div className='absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center px-2 '>
+							<div className='md:w-96  bg-mamba-100 py-8 rounded-lg'>
+								<div className='w-full flex justify-center  text-white font-bold text-xs sm:text-2xl'>
+									<p>career opportunity</p>
+								</div>
+								<div className='w-full flex justify-center text-xs sm:text-sm text-gray-100'>
+									<p>
+										visual form of a document or a typeface without relying on
+										meaningful content. Lorem ipsum may be
+									</p>
+								</div>
+								<div className='w-full flex justify-center'>
+									<button className='py-1 px-2 rounded-lg bg-blue-600 text-white'>
+										open roles
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<HomeFooter />
