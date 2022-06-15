@@ -19,6 +19,7 @@ import "swiper/css/effect-fade";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import HomeFooter from "../../components/HomeFooter";
+import { motion, AnimatePresence } from "framer-motion";
 function Team() {
 	return (
 		<div className='w-screen'>
@@ -67,7 +68,7 @@ function Team() {
 					effect={"cards"}
 					grabCursor={true}
 					modules={[EffectCards]}
-					className='flex justify-center items-center  sm:w-80 '
+					className='flex justify-center items-center w-72   sm:w-80 '
 				>
 					<SwiperSlide className='bg-black  rounded-xl'>
 						<div className='px-6 w-full'>
@@ -357,12 +358,92 @@ function Team() {
 					</div>
 				</div>
 			</div>
+			<div className=' w-full'>
+				<div className='flex justify-center items-center py-20  bg-white'>
+					<div className='grid grid-flow-col grid-cols-8 '>
+						<div className='col-span-8 sm:col-span-6 sm:col-start-2 grid grid-cols-1 md:grid-cols-2 gap-x-3'>
+							<div className=' px-6 w-96 md:w-full lg:w-small2 shadow-xl rounded-xl'>
+								<div className='w-full flex justify-center items-center my-6'>
+									<div className=' h-32 w-32 overflow-hidden  bg-mamba-100 rounded-full outline-black shadow-2xl'>
+										<img
+											src={require("../../images/yashee.jpeg")}
+											alt=''
+											className=' w-full h-full object-cover'
+										/>
+									</div>
+									<div className='self-end space-x-2 flex justify-center'>
+										<button>
+											<i class='fab fa-github-square text-xl '></i>
+										</button>
+										<button>
+											<i class='fab fa-linkedin text-xl text-blue-500'></i>
+										</button>
+									</div>
+								</div>
+								<div className='w-full flex flex-col justify-center '>
+									<h3 className='text-mamba-100 text-xl'>Mark Luke</h3>
+									<h6 className='text-gray-500'>
+										Co-founder, CEO, and Instructor
+									</h6>
+								</div>
+								<div>
+									<p className='text-gray-500 tracking-wider text-sm'>
+										Clément is an Ex-Google and Ex-Facebook Software Engineer
+										who runs a YouTube channel with over 300k subscribers. After
+										graduating with a degree in Mathematics from the University
+										of Pennsylvania in May 2016, he decided to learn programming
+										and to enroll in Fullstack Academy, an immersive coding
+										bootcamp in New York City. While there, he fell in love with
+										full-stack development and algorithm analysis. Upon
+									</p>
+								</div>
+							</div>
+							<div className='px-6 w-96 md:w-full lg:w-small2 shadow-xl rounded-xl'>
+								<div className='w-full flex justify-center items-center my-6'>
+									<div className=' h-32 w-32 overflow-hidden  bg-mamba-100 rounded-full   shadow-2xl'>
+										<img
+											src={require("../../images/indian.jpeg")}
+											alt=''
+											className=' w-full h-full object-cover '
+										/>
+									</div>
+									<div className='self-end space-x-2 flex justify-center'>
+										<button>
+											<i class='fab fa-github-square text-xl '></i>
+										</button>
+										<button>
+											<i class='fab fa-linkedin text-xl text-blue-400'></i>
+										</button>
+									</div>
+								</div>
+								<div className='w-full flex flex-col justify-center '>
+									<h3 className='text-mamba-100 text-xl'>Sara Banks</h3>
+									<h6 className='text-gray-500'>
+										Co-founder, CEO, and Instructor
+									</h6>
+								</div>
+								<div>
+									<p className='text-gray-500 tracking-wider text-sm'>
+										Clément is an Ex-Google and Ex-Facebook Software Engineer
+										who runs a YouTube channel with over 300k subscribers. After
+										graduating with a degree in Mathematics from the University
+										of Pennsylvania in May 2016, he decided to learn programming
+										and to enroll in Fullstack Academy, an immersive coding
+										bootcamp in New York City. While there, he fell in love with
+										full-stack development and algorithm analysis. Upon
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<div className='w-full flex justify-center py-10 text-5xl font-bold font-ArchitectDaughter'>
 				<div>our investors</div>
 			</div>
 			<div className='w-full flex justify-center items-center  py-6'>
-				<div className='grid grid-cols-1 md:grid-cols-3 gap-5  lg:space-x-8 lg:h-small2  '>
+				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  lg:space-x-8 lg:h-small2  '>
 					<div className=' '>
 						<div className='bg-white w-72   overflow-hidden shadow-md rounded-2xl'>
 							<div className='overflow-hidden h-48'>

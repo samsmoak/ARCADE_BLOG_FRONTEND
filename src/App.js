@@ -6,39 +6,39 @@ import {
 	Router,
 	useRoutes,
 } from "react-router-dom";
-import React, { useContext } from "react";
-import { Context } from "./context/Context";
-// import Layout from "./components/TheContent";
+
+import Navbar from "./components/Navbar";
+
+import Animatedroutes from "./components/Animatedroutes";
+
+import { useContext } from "react";
+import Homepage from "./Pages/HomePage/Homepage";
 import Main from "./Pages/Mains/Main";
+import Team from "./Pages/Team/Team";
 import Login from "./Pages/Login/Login";
 import Write from "./Pages/Write/Write";
 import Signup from "./Pages/Signup/Signup";
 import Setting from "./Pages/Setting/Setting";
-import Single from "./Pages/Single/Single";
-import Update from "./Pages/Update/Update";
-import Navbar from "./components/Navbar";
 import Profile from "./Pages/Setting/profile";
 import Dashboard from "./Pages/Setting/Dashboard";
-import RecentPost from "./Pages/Mains/RecentPost";
-import Homepage from "./Pages/HomePage/Homepage";
-import Team from "./Pages/Team/Team";
+import Single from "./Pages/Single/Single";
 import Recentsingle from "./Pages/Single/RecentSingle";
+import Update from "./Pages/Update/Update";
+import { Context } from "./context/Context";
 
 function App() {
-	const { user } = useContext(Context);
 	// let element = useRoutes(routes);
+	const { user } = useContext(Context);
 	return (
-		<div className='w-screen'>
+		<div className='w-screen relative  '>
 			{/* <BrowserRouter>
 				<Router>{element}</Router>
 			</BrowserRouter> */}
 
 			<BrowserRouter>
-				{/* <React.Suspense fallback={"loading"}> */}
-				<div>
+				<div className='w-full static'>
 					<Navbar />
 				</div>
-
 				<Routes className=''>
 					<Route path='/' element={<Homepage />} />
 					<Route path='mainblog' element={<Main />} />
@@ -55,8 +55,6 @@ function App() {
 
 					<Route path='/update/:postId' element={<Update />} />
 				</Routes>
-
-				{/* </React.Suspense> */}
 			</BrowserRouter>
 			{/* <Layout /> */}
 		</div>

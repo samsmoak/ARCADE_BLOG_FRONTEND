@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import API from "../../API";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Signup() {
 	const [username, setUsername] = useState("");
@@ -25,7 +26,7 @@ function Signup() {
 	return (
 		<div>
 			<div className=' w-screen h-screen   bg-cover flex justify-center items-center '>
-				<div className='h-small2 w-96 bg-gradient-to-bl from-purple-700 via-violet-600 to-pink-400 bg-gray-600 bg-opacity-50 rounded-xl py-10 px-4 border-t-2 border-r-4 border-b-2 border-opacity-30 border-gray-700'>
+				<div className='h-small2 w-96 bg-[url("/src/images/hakon2.svg")] bg-opacity-50 rounded-xl py-10 px-4 border-t-2 border-r-4 border-b-2 border-opacity-30 border-gray-700'>
 					<div className='font-Yanone_Kaffeesatz text-4xl text-black uppercase text-center w-full'>
 						create your arcade account
 					</div>

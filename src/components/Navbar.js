@@ -18,8 +18,8 @@ function Navbar() {
 	};
 	return (
 		<div
-			style={{ textDecoration: "none" }}
-			className='z-40 absolute   w-screen bg-white shadow-sm flex justify-between '
+			// style={{ textDecoration: "none" }}
+			className='fixed sm:absolute z-30   w-screen bg-white shadow-sm flex justify-between pl-10 '
 		>
 			<div className='mt-2 ml-14 '>
 				<Link
@@ -30,17 +30,19 @@ function Navbar() {
 				</Link>
 			</div>
 			<div className='hidden sm:flex h-10 w-screen   justify-around items-center   '>
-				<div className='flex space-x-4'>
-					<div>
-						<Link to='' className='text-xs font-bold  text-black  '>
+				<div className='flex space-x-4 py-2'>
+					<span className='py-1'>
+						<div className='text-xs font-bold  text-black cursor-pointer   '>
 							Feature
-						</Link>
-					</div>
+						</div>
+					</span>
 
 					<div>
-						<Link to='team' className='text-xs font-bold text-black  '>
-							Team
-						</Link>
+						<div>
+							<Link to='team' className='text-xs font-bold text-black  '>
+								Team
+							</Link>
+						</div>
 					</div>
 					<div>
 						<Link to='mainblog' className='text-xs font-bold text-black  '>
@@ -125,7 +127,7 @@ function Navbar() {
 				</div>
 			</div>
 			<div
-				className=' sm:hidden cursor-pointer relative mt-2'
+				className='z-50 sm:hidden cursor-pointer relative mt-2'
 				onClick={sidemenuhandler}
 				// sidemenu={this.state.sidemenu}
 			>
@@ -144,7 +146,7 @@ function Navbar() {
 					/>
 				</svg>
 				<div
-					className={`z-40 h-screen w-72 bg-purple-700 absolute top-8 -right-1 transform duration-500 flex justify-center ${
+					className={`z-50 h-screen w-72 bg-purple-700 absolute top-8 -right-1 transform duration-500 flex justify-center ${
 						sidemenu ? "translate-x-0" : "translate-x-full"
 					}`}
 				>
@@ -158,19 +160,22 @@ function Navbar() {
 								style={{ textDecoration: "none" }}
 								className='text-white '
 							>
-								<div className=' rounded-full overflow-hidden h-12 w-12  text-fuchsia-800 bg-red-400 text-center capitalize font-extrabold'>
-									{user.profilePic == "" ? (
-										<img
-											src={PF + user.profilePic}
-											alt=''
-											className='object-cover h-full w-full'
-										/>
-									) : (
-										<div className='capitalize w-full h-full flex justify-center items-center text-3xl font-extrabold text-black'>
-											{user.username.slice(0, 1)}
-										</div>
-									)}
-								</div>
+								{user && (
+									<div className=' rounded-full overflow-hidden h-12 w-12  text-fuchsia-800 bg-red-400 text-center capitalize font-extrabold'>
+										{user.profilePic !== "" ? (
+											<img
+												src={PF + user.profilePic}
+												alt=''
+												className='object-cover h-full w-full'
+											/>
+										) : (
+											<div className='capitalize w-full h-full flex justify-center items-center text-3xl font-extrabold text-black'>
+												{user.username.slice(0, 1)}
+											</div>
+										)}
+										)
+									</div>
+								)}
 							</Link>
 						</div>
 						<Link
@@ -187,13 +192,9 @@ function Navbar() {
 						>
 							Team
 						</Link>
-						<Link
-							to=''
-							style={{ textDecoration: "none" }}
-							className='text-white '
-						>
+						<div style={{ textDecoration: "none" }} className='text-white '>
 							Features
-						</Link>
+						</div>
 						<Link
 							to='/mainblog'
 							style={{ textDecoration: "none" }}
@@ -208,6 +209,16 @@ function Navbar() {
 						>
 							write
 						</Link>
+						{user && (
+							<div className='w-full flex justify-center'>
+								<div
+									className='text-gray-200 rounded-xl bg-gray-700 px-2 py-1 '
+									onClick={handlelogout}
+								>
+									logout
+								</div>
+							</div>
+						)}
 						<div className='text-white '>
 							{!user && (
 								<div className='flex flex-col'>
@@ -220,8 +231,11 @@ function Navbar() {
 											Login
 										</Link>
 									</div>
-									<div className='px-3 rounded-lg bg-zinc-900 text-white'>
-										<Link to='signup' className='text-white'>
+									<div className=' text-black'>
+										<Link
+											to='signup'
+											className='text-green-500 hover:text-green-500'
+										>
 											Signup
 										</Link>
 									</div>

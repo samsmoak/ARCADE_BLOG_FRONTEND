@@ -103,7 +103,7 @@ function Single() {
 
 			<div className='bg-[#ECEFF9]'>
 				<div className='w-screen pl-4 sm:pl-48 flex '>
-					<div className=' -translate-y-40 w-3/4 h-80 md:w-small1 md:h-small2 '>
+					<div className=' -translate-y-40 w-3/4 h-80 md:w-small1 md:h-96 '>
 						<div className='   bg-slate-600  overflow-hidden rounded-3xl   '>
 							{post.photo && (
 								<img src={PF + post.photo} alt='' className='w-full h-full' />
@@ -111,7 +111,7 @@ function Single() {
 						</div>
 					</div>
 				</div>
-				<div className='px-2 md:pl-48 w-screen '>
+				<div className='px-2 md:pl-48 w-screen mt-16 '>
 					<div className='   '>
 						<div className='w-3/4 md:w-big   space-y-3'>
 							<div
