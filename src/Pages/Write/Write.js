@@ -5,6 +5,7 @@ import { Context } from "../../context/Context";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import HomeFooter from "../../components/HomeFooter";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Write() {
 	const [title, setTitle] = useState("");
@@ -104,7 +105,7 @@ function Write() {
 				</div>
 			</div>
 			<div className='w-full flex justify-center items-center py-24'>
-				<div className='w-4/5 h-96 '>
+				<div className='w-4/5 md:w-small2 h-96 '>
 					<div className='h-full w-full md:w-small1 md:h-small2 overflow-hidden relative '>
 						<img
 							src='https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80'

@@ -6,6 +6,7 @@ import API from "../../API";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 import HomeFooter from "../../components/HomeFooter";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Main() {
 	const [posts, setPosts] = useState([]);
@@ -49,7 +50,7 @@ function Main() {
 	};
 
 	return (
-		<div>
+		<div className='py-10'>
 			<div className='h-small1 w-screen bg-gradient-to-br from-pink-500 via-fuchsia-800 to-pink-500  bg-cover'>
 				<div className='w-full space-y-16 '>
 					<div className='flex justify-center py-5 '>

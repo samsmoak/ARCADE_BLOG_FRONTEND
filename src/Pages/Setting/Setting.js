@@ -17,19 +17,21 @@ function Setting() {
 						<div className='w-full lg:h-screen   px-5 py-10 border-r-2 border-dashed bg-mamba-100 '>
 							<div className='w-full space-y-6 '>
 								<div className='w-full flex justify-center'>
-									<div className='z-20 h-28 w-28 rounded-full overflow-hidden bg-white   '>
-										{user.profilePic == "" ? (
-											<img
-												src={PF + user.profilePic}
-												alt=''
-												className='object-cover h-full w-full'
-											/>
-										) : (
-											<div className='capitalize w-full h-full flex justify-center items-center text-3xl font-extrabold text-black'>
-												{user.username.slice(0, 1)}
-											</div>
-										)}
-									</div>
+									{user && (
+										<div className='z-20 h-28 w-28 rounded-full overflow-hidden bg-white   '>
+											{user.profilePic !== "" ? (
+												<img
+													src={PF + user.profilePic}
+													alt=''
+													className='object-cover h-full w-full'
+												/>
+											) : (
+												<div className='capitalize w-full h-full flex justify-center items-center text-3xl font-extrabold text-black'>
+													{user.username.slice(0, 1)}
+												</div>
+											)}
+										</div>
+									)}
 								</div>
 								<div className='w-full flex flex-col  justify-center items-center uppercase font-Yanone_Kaffeesatz'>
 									<Link to='/setting/profile'>

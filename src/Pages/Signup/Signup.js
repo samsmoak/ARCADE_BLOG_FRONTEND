@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import API from "../../API";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Signup() {
 	const [username, setUsername] = useState("");

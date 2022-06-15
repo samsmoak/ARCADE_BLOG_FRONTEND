@@ -3,6 +3,7 @@ import React from "react";
 import { useRef, useContext } from "react";
 import { Context } from "../../context/Context";
 import API from "../../API";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Login() {
 	const userRef = useRef();

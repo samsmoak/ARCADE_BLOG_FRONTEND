@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { Outlet } from "react-router-dom";
 import { Context } from "../../context/Context";
 import API from "../../API";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Profile() {
 	const [file, setFile] = useState("");

@@ -19,6 +19,7 @@ import "swiper/css/effect-fade";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import HomeFooter from "../../components/HomeFooter";
+import { motion, AnimatePresence } from "framer-motion";
 function Team() {
 	return (
 		<div className='w-screen'>
@@ -67,7 +68,7 @@ function Team() {
 					effect={"cards"}
 					grabCursor={true}
 					modules={[EffectCards]}
-					className='flex justify-center items-center  sm:w-80 '
+					className='flex justify-center items-center w-72   sm:w-80 '
 				>
 					<SwiperSlide className='bg-black  rounded-xl'>
 						<div className='px-6 w-full'>
@@ -362,7 +363,7 @@ function Team() {
 				<div>our investors</div>
 			</div>
 			<div className='w-full flex justify-center items-center  py-6'>
-				<div className='grid grid-cols-1 md:grid-cols-3 gap-5  lg:space-x-8 lg:h-small2  '>
+				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  lg:space-x-8 lg:h-small2  '>
 					<div className=' '>
 						<div className='bg-white w-72   overflow-hidden shadow-md rounded-2xl'>
 							<div className='overflow-hidden h-48'>

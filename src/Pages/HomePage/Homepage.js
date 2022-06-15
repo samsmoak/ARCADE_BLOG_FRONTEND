@@ -8,6 +8,7 @@ import HomeFooter from "../../components/HomeFooter";
 import Deck from "../../components/Deck";
 import Cardflip from "../../components/Cardflip";
 import Swippslider from "../../components/Swippslider";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Homepage() {
 	const [right, setRight] = useState(0);
@@ -49,9 +50,9 @@ function Homepage() {
 	// });
 
 	return (
-		<div className=' md:pt-20 md:px-12'>
+		<div className='md:pt-20 md:px-12'>
 			<div className='shadow-xl'>
-				<div className='grid grid-cols-1 sm:grid-cols-2  bg-[url("/src/images/goog.svg")] bg-no-repeat object-contain bg-center '>
+				<div className='grid grid-cols-1 md:grid-cols-2  bg-[url("/src/images/border.svg")] bg-no-repeat object-contain bg-center '>
 					<div className=' px-4 w-full h-small1  flex justify-center items-center space-x-2 object-cover'>
 						<div className=' px-4 w-full flex justify-center text-4xl text-white bg-[#011220] opacity-70 py-3'>
 							<div className='text-black'>
@@ -97,7 +98,7 @@ function Homepage() {
 					</div>
 				</div>
 
-				<div className=' flex items-center flex-col p-28  bg-[url("/src/images/boober.svg")] '>
+				<div className=' flex items-center flex-col p-28  bg-[url("/src/images/border.svg")] '>
 					<p className='text-2xl text-black font-extrabold'>
 						Companies maximizing sales productivity with Luxstek
 					</p>
@@ -108,55 +109,57 @@ function Homepage() {
 						<div>dominos</div>
 					</div>
 				</div>
-				<div className='grid grid-cols-1 px-5 md:grid-cols-2 space-y-5 md:space-y-0 lg:space-x-24 py-40 bg-white '>
-					<div className='w-full flex justify-center'>
-						<div className='sm:w-96 px-6   bg-white opacity-90'>
-							<div className='flex'>
-								<div>
-									<svg
-										xmlns='http://www.w3.org/2000/svg'
-										class='h-14 w-14 text-red-400'
-										fill='none'
-										viewBox='0 0 24 24'
-										stroke='currentColor'
-										stroke-width='2'
-									>
-										<path
-											stroke-linecap='round'
-											stroke-linejoin='round'
-											d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'
-										/>
-										<path
-											stroke-linecap='round'
-											stroke-linejoin='round'
-											d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'
-										/>
-									</svg>
+				<div className='flex justify-center space-x-24 mt-16'>
+					<div className='grid grid-cols-1 px-5 md:grid-cols-2 space-y-5 md:space-y-0 lg:space-x-24 py-40 bg-white '>
+						<div className='w-full flex justify-center'>
+							<div className='sm:w-96 px-6   bg-white opacity-90'>
+								<div className='flex'>
+									<div>
+										<svg
+											xmlns='http://www.w3.org/2000/svg'
+											class='h-14 w-14 text-red-400'
+											fill='none'
+											viewBox='0 0 24 24'
+											stroke='currentColor'
+											stroke-width='2'
+										>
+											<path
+												stroke-linecap='round'
+												stroke-linejoin='round'
+												d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'
+											/>
+											<path
+												stroke-linecap='round'
+												stroke-linejoin='round'
+												d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'
+											/>
+										</svg>
+									</div>
+									<div className='flex justify-center items-center'>
+										<p className='font-medium text-gray-400'>GAMIFICATION</p>
+									</div>
 								</div>
-								<div className='flex justify-center items-center'>
-									<p className='font-medium text-gray-400'>GAMIFICATION</p>
-								</div>
-							</div>
 
-							<p className='text-2xl font-bold text-indigo-900'>
-								Gamified incentives that drive employee performance
-							</p>
-							<p className='text-xs text-gray-500'>
-								Design and select team building games that work best for your
-								company, and watch your revenue skyrocket.
-							</p>
-							<button className='px-3 py-2 bg-indigo-900 text-white rounded-3xl text-center font-bold'>
-								learn more
-							</button>
+								<p className='text-2xl font-bold text-indigo-900'>
+									Gamified incentives that drive employee performance
+								</p>
+								<p className='text-xs text-gray-500'>
+									Design and select team building games that work best for your
+									company, and watch your revenue skyrocket.
+								</p>
+								<button className='px-3 py-2 bg-indigo-900 text-white rounded-3xl text-center font-bold'>
+									learn more
+								</button>
+							</div>
 						</div>
-					</div>
-					<div className='w-full flex justify-center'>
-						<div className='  w-96'>
-							<img
-								src={require("../../images/gamified.jpg")}
-								alt='imd'
-								className='w-full h-full object-cover'
-							/>
+						<div className='w-full flex justify-center'>
+							<div className='  w-96'>
+								<img
+									src={require("../../images/gamified.jpg")}
+									alt='imd'
+									className='w-full h-full object-cover'
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -241,7 +244,7 @@ function Homepage() {
 					</div>
 				</div>
 				<div className='flex justify-center space-x-24 mt-16'>
-					<div className='grid grid-cols-1 gap-y-4 md:gap-y-0 md:grid-cols-2 '>
+					<div className='grid grid-cols-1 px-5 gap-y-4 md:gap-y-0 md:grid-cols-2 lg:space-x-24 py-40 bg-white '>
 						<div className='sm:w-96 px-6 sm:px-0'>
 							<div className='flex sm:space-x-3'>
 								<div className='w-6 h-6 overflow-hidden rounded-full'>

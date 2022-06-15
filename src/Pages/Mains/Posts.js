@@ -64,8 +64,8 @@ function Posts(props) {
 				</div>
 			</div>
 			{/* post of late */}
-			<div className='bg-[url("/src/images/fogazi.svg")] w-full h-96'></div>
-			<div className='flex w-screen py-8 justify-center items-center bg-violet-700  '>
+			{/* <div className='bg-[url("/src/images/fogazi.svg")] w-full h-96'></div> */}
+			{/* <div className='flex w-screen py-8 justify-center items-center bg-violet-700  '>
 				<div className=' grid  grid-cols-1 md:grid-cols-2 gap-4'>
 					<div className='w-small1 md:w-96 lg:w-small1 h-96 bg-slate-600 rounded-6xl overflow-hidden relative transition-all duration-200 hover:-translate-y-2 '>
 						<img
@@ -82,7 +82,7 @@ function Posts(props) {
 						/>
 					</div>
 				</div>
-			</div>
+			</div> */}
 			<div className='bg-[url("/src/images/diva.svg")] w-full h-96'></div>
 			{/* rest of thee posts */}
 			<div>
