@@ -6,40 +6,50 @@ function HomeFooter() {
 			{" "}
 			<div className=' bg-indigo-900 flex items-center justify-center'>
 				<div className='grid sm:grid-cols-2 lg:grid-cols-5 text-white gap-5  py-20'>
-					<div>
-						<h4>Arcadei</h4>
-						<h6>Desktop app</h6>
-						<h6>Mobile apps</h6>
-						<h6>Plans</h6>
-						<h6>Features</h6>
+					<div className='flex flex-col items-center space-y-4'>
+						<h4 className='text-xl font-bold text-black '>Arcadei</h4>
+						<div>
+							<h6 className='text-xs font-light'>Desktop app</h6>
+							<h6 className='text-xs font-light'>Mobile apps</h6>
+							<h6 className='text-xs font-light'>Plans</h6>
+							<h6 className='text-xs font-light'>Features</h6>
+						</div>
 					</div>
-					<div>
-						<h4>Company</h4>
-						<h6>Desktop app</h6>
-						<h6>Mobile apps</h6>
-						<h6>Plans</h6>
-						<h6>Features</h6>
+					<div className='flex flex-col items-center space-y-4'>
+						<h4 className='text-xl font-bold text-black '>Company</h4>
+						<div>
+							<h6 className='text-xs font-light'>Desktop app</h6>
+							<h6 className='text-xs font-light'>Mobile apps</h6>
+							<h6 className='text-xs font-light'>Plans</h6>
+							<h6 className='text-xs font-light'>Features</h6>
+						</div>
 					</div>
-					<div>
-						<h4>Support</h4>
-						<h6>Desktop app</h6>
-						<h6>Mobile apps</h6>
-						<h6>Plans</h6>
-						<h6>Features</h6>
+					<div className='flex flex-col items-center space-y-4'>
+						<h4 className='text-xl font-bold text-black '>Support</h4>
+						<div>
+							<h6 className='text-xs font-light'>Desktop app</h6>
+							<h6 className='text-xs font-light'>Mobile apps</h6>
+							<h6 className='text-xs font-light'>Plans</h6>
+							<h6 className='text-xs font-light'>Features</h6>
+						</div>
 					</div>
-					<div>
-						<h4>Community</h4>
-						<h6>Desktop app</h6>
-						<h6>Mobile apps</h6>
-						<h6>Plans</h6>
-						<h6>Features</h6>
+					<div className='flex flex-col items-center space-y-4'>
+						<h4 className='text-xl font-bold text-black '>Community</h4>
+						<div>
+							<h6 className='text-xs font-light'>Desktop app</h6>
+							<h6 className='text-xs font-light'>Mobile apps</h6>
+							<h6 className='text-xs font-light'>Plans</h6>
+							<h6 className='text-xs font-light'>Features</h6>
+						</div>
 					</div>
-					<div>
-						<h4>Products</h4>
-						<h6>Desktop app</h6>
-						<h6>Mobile apps</h6>
-						<h6>Plans</h6>
-						<h6>Features</h6>
+					<div className='flex flex-col items-center space-y-4'>
+						<h4 className='text-xl font-bold text-black '>Products</h4>
+						<div>
+							<h6 className='text-xs font-light'>Desktop app</h6>
+							<h6 className='text-xs font-light'>Mobile apps</h6>
+							<h6 className='text-xs font-light'>Plans</h6>
+							<h6 className='text-xs font-light'>Features</h6>
+						</div>
 					</div>
 				</div>
 			</div>

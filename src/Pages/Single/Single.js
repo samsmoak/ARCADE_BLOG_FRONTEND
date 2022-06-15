@@ -49,7 +49,7 @@ function Single() {
 	};
 	return (
 		<div className=' '>
-			<div className=' w-screen flex flex-col justify-center h-big bg-[url("/src/images/stacked-steps-haikei.svg")] pl-48 space-y-8'>
+			<div className=' w-screen flex flex-col justify-center h-big bg-[url("/src/images/stacked-steps-haikei.svg")] pl-4 md:pl-48 space-y-8'>
 				<div>
 					<div
 						onClick={handleClick}
@@ -102,18 +102,18 @@ function Single() {
 			</div>
 
 			<div className='bg-[#ECEFF9]'>
-				<div className='w-screen pl-48'>
-					<div className=' -translate-y-40  '>
-						<div className='w-small1 h-small2 bg-slate-600  overflow-hidden rounded-3xl   '>
+				<div className='w-screen pl-4 sm:pl-48 flex '>
+					<div className=' -translate-y-40 w-3/4 h-80 md:w-small1 md:h-small2 '>
+						<div className='   bg-slate-600  overflow-hidden rounded-3xl   '>
 							{post.photo && (
 								<img src={PF + post.photo} alt='' className='w-full h-full' />
 							)}
 						</div>
 					</div>
 				</div>
-				<div className='pl-48 w-screen '>
+				<div className='px-2 md:pl-48 w-screen '>
 					<div className='   '>
-						<div className='w-big   space-y-3'>
+						<div className='w-3/4 md:w-big   space-y-3'>
 							<div
 								className={`space-y-4 relative w-big ${deleter && " h-40"}  `}
 							>
@@ -194,7 +194,7 @@ function Single() {
 									</div>
 								)}
 							</div>
-							<div className='text-zinc-800 font-body leading-relaxed w-small1'>
+							<div className='text-zinc-800 font-body md:leading-relaxed w-full pl-5 lg:pl-20'>
 								<p>{parse(desc)}</p>
 							</div>
 						</div>

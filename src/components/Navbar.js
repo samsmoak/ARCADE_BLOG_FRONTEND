@@ -1,29 +1,38 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import API from "../API";
 import { Context } from "../context/Context";
 import { Menu } from "@headlessui/react";
 function Navbar() {
 	const PF = "http://localhost:5000/images/";
+	const [sidemenu, setSidemenu] = useState(false);
 	const { user } = useContext(Context);
 	const handlelogout = () => {
 		localStorage.clear();
 		window.location.replace("/");
 	};
+	const sidemenuhandler = () => {
+		setSidemenu((sidemenu) => !sidemenu);
+		let sidem = sidemenu;
+		console.log(sidem);
+	};
 	return (
-		<div style={{ textDecoration: "none" }} className=' bg-white shadow-sm  '>
-			<div className='h-10 w-screen  flex justify-around items-center   '>
+		<div
+			style={{ textDecoration: "none" }}
+			className='z-40 absolute   w-screen bg-white shadow-sm flex justify-between '
+		>
+			<div className='mt-2 ml-14 '>
+				<Link
+					to='/'
+					className='font-ArchitectDaughter font-extrabold text-red-700 hover:text-red-700 '
+				>
+					LUSTEK
+				</Link>
+			</div>
+			<div className='hidden sm:flex h-10 w-screen   justify-around items-center   '>
 				<div className='flex space-x-4'>
 					<div>
-						<Link
-							to='/'
-							className='font-ArchitectDaughter font-extrabold text-red-700 hover:text-red-700 '
-						>
-							LUSTEK
-						</Link>
-					</div>
-					<div>
-						<Link to='write' className='text-xs font-bold  text-black  '>
+						<Link to='' className='text-xs font-bold  text-black  '>
 							Feature
 						</Link>
 					</div>
@@ -113,6 +122,113 @@ function Navbar() {
 							</div>
 						</div>
 					)}
+				</div>
+			</div>
+			<div
+				className=' sm:hidden cursor-pointer relative mt-2'
+				onClick={sidemenuhandler}
+				// sidemenu={this.state.sidemenu}
+			>
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					class='h-6 w-6'
+					fill='none'
+					viewBox='0 0 24 24'
+					stroke='currentColor'
+				>
+					<path
+						stroke-linecap='round'
+						stroke-linejoin='round'
+						stroke-width='2'
+						d='M4 6h16M4 12h16M4 18h16'
+					/>
+				</svg>
+				<div
+					className={`z-40 h-screen w-72 bg-purple-700 absolute top-8 -right-1 transform duration-500 flex justify-center ${
+						sidemenu ? "translate-x-0" : "translate-x-full"
+					}`}
+				>
+					<div
+						className='text-white flex flex-col space-y-4 text-xl py-10 w-3/4'
+						style={{ textDecoration: "none" }}
+					>
+						<div className='w-full justify-center flex'>
+							<Link
+								to='setting/profile'
+								style={{ textDecoration: "none" }}
+								className='text-white '
+							>
+								<div className=' rounded-full overflow-hidden h-12 w-12  text-fuchsia-800 bg-red-400 text-center capitalize font-extrabold'>
+									{user.profilePic == "" ? (
+										<img
+											src={PF + user.profilePic}
+											alt=''
+											className='object-cover h-full w-full'
+										/>
+									) : (
+										<div className='capitalize w-full h-full flex justify-center items-center text-3xl font-extrabold text-black'>
+											{user.username.slice(0, 1)}
+										</div>
+									)}
+								</div>
+							</Link>
+						</div>
+						<Link
+							to='/'
+							style={{ textDecoration: "none" }}
+							className='text-white '
+						>
+							Home
+						</Link>
+						<Link
+							to='/team'
+							style={{ textDecoration: "none" }}
+							className='text-white '
+						>
+							Team
+						</Link>
+						<Link
+							to=''
+							style={{ textDecoration: "none" }}
+							className='text-white '
+						>
+							Features
+						</Link>
+						<Link
+							to='/mainblog'
+							style={{ textDecoration: "none" }}
+							className='text-white '
+						>
+							blog
+						</Link>
+						<Link
+							to='/write'
+							style={{ textDecoration: "none" }}
+							className='text-white '
+						>
+							write
+						</Link>
+						<div className='text-white '>
+							{!user && (
+								<div className='flex flex-col'>
+									<div className='text-white'>
+										<Link
+											to='login'
+											style={{ textDecoration: "none" }}
+											className='text-black'
+										>
+											Login
+										</Link>
+									</div>
+									<div className='px-3 rounded-lg bg-zinc-900 text-white'>
+										<Link to='signup' className='text-white'>
+											Signup
+										</Link>
+									</div>
+								</div>
+							)}
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

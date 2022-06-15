@@ -7,7 +7,7 @@ function Posts(props) {
 		<div>
 			{/* featured posts */}
 			<div className='flex justify-center w-screen py-10 bg-gradient-to-bl from-pink-500 via-fuchsia-800 to-violet-700 '>
-				<div className='grid grid-cols-1 md:grid-cols-3 gap-5  lg:space-x-8 lg:h-small2  '>
+				<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5  lg:space-x-8 lg:h-small2  '>
 					{props.recent.map((p) => {
 						return <RecentPost recent={p} key={p._id} />;
 					})}
@@ -65,31 +65,21 @@ function Posts(props) {
 			</div>
 			{/* post of late */}
 			<div className='bg-[url("/src/images/fogazi.svg")] w-full h-96'></div>
-			<div className='flex w-screen py-8 justify-center bg-violet-700 '>
-				<div className=' grid grid-flow-col gap-4'>
-					<div className='w-small1 h-96 bg-slate-600 rounded-6xl overflow-hidden relative transition-all duration-200 hover:-translate-y-2 '>
+			<div className='flex w-screen py-8 justify-center items-center bg-violet-700  '>
+				<div className=' grid  grid-cols-1 md:grid-cols-2 gap-4'>
+					<div className='w-small1 md:w-96 lg:w-small1 h-96 bg-slate-600 rounded-6xl overflow-hidden relative transition-all duration-200 hover:-translate-y-2 '>
 						<img
 							src='https://images.unsplash.com/photo-1645839744008-2d3a0b6a62e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2050&q=80'
 							alt=''
 							className='object-cover h-full w-full'
 						/>
-						<div className='z-10 text-white absolute left-0 right-0 bottom-0 top-0 flex flex-col ml-5 justify-end py-5'>
-							<div>hey</div>
-							<div>hey</div>
-							<div>hey</div>
-						</div>
 					</div>
-					<div className='w-72 h-96 bg-slate-600 rounded-6xl overflow-hidden relative transition-all duration-200 hover:-translate-y-2 '>
+					<div className='w-72 h-96 hidden md:block md:place-self-center bg-slate-600 rounded-6xl overflow-hidden relative transition-all duration-200 hover:-translate-y-2 '>
 						<img
 							src='https://images.unsplash.com/photo-1645389410604-f5d8ef44267a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1007&q=80'
 							alt=''
 							className='object-cover h-full w-full'
 						/>
-						<div className='z-10 text-white absolute left-0 right-0 bottom-0 top-0 flex flex-col ml-5 justify-end py-5'>
-							<div>hey</div>
-							<div>hey</div>
-							<div>hey</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -98,7 +88,7 @@ function Posts(props) {
 			<div>
 				<div className=' py-40 w-screen bg-gray-100  '>
 					<div className=' flex items-center justify-center'>
-						<div className='grid grid-cols-1 md:grid-cols-3 gap-5 overflow-hidden  '>
+						<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 overflow-hidden  '>
 							{props.posts.map((p) => {
 								return <Post post={p} key={p._id} />;
 							})}
