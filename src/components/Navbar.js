@@ -34,6 +34,11 @@ function Navbar() {
 						</Link>
 					</div>
 					<div>
+						<Link to='mainblog' className='text-xs font-bold text-black  '>
+							Blog
+						</Link>
+					</div>
+					<div>
 						<Link
 							to='write'
 							className='text-xs font-bold  text-lime-700 hover:text-lime-700 '
