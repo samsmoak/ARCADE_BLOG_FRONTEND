@@ -38,16 +38,16 @@ function Cardflip() {
 				effect={"cards"}
 				grabCursor={true}
 				modules={[EffectCards]}
-				className='flex justify-center items-center h-96 w-80 '
+				className='flex justify-center items-center h-80  w-52 sm:h-96 sm:w-64 lg:w-80 '
 			>
 				<SwiperSlide className='w-96 h-96 bg-purple-700 rounded-xl flex justify-center items-center '>
 					<div className='space-y-4 text-white'>
-						<p className='text-4xl font-extrabold font-redressed'>
+						<p className='w-full flex items-center flex-col text-xs sm:text-4xl font-extrabold font-redressed'>
 							<span className='text-yellow-500'>Luxstek's</span> core believes
 						</p>
 						<div className='w-full flex justify-center flex-col items-center'>
-							<p className='text-xl font-bold'>values</p>
-							<p className='text-2xl font-extrabold font-redressed'>
+							<p className='sm:text-xl font-bold'>values</p>
+							<p className='sm:text-2xl font-extrabold font-redressed'>
 								& principles
 							</p>
 						</div>
@@ -56,11 +56,11 @@ function Cardflip() {
 				<SwiperSlide className='w-96 h-96 bg-stone-800 rounded-xl flex justify-center items-center '>
 					<div className='space-y-4 text-white'>
 						<div></div>
-						<p className='text-4xl font-extrabold font-redressed w-full text-center'>
+						<p className='text-sm sm:text-4xl font-extrabold font-redressed w-full text-center'>
 							imaginative power
 						</p>
 						<div className='w-full flex justify-center flex-col items-center px-3'>
-							<p className='text-sm font-semibold text-center '>
+							<p className='text-xs  sm:text-sm font-semibold text-center '>
 								application, and React will efficiently update and render just
 								the right components when your data changes. Declarative views
 								make your code more predictable and easier to debug.
@@ -71,11 +71,11 @@ function Cardflip() {
 				<SwiperSlide className='w-96 h-96 bg-neutral-800 rounded-xl flex justify-center items-center '>
 					<div className='space-y-4 text-white'>
 						<div></div>
-						<p className='text-4xl font-extrabold font-redressed w-full text-center'>
+						<p className='text-sm sm:text-4xl  font-extrabold font-redressed w-full text-center'>
 							reliability
 						</p>
 						<div className='w-full flex justify-center flex-col items-center px-3'>
-							<p className='text-sm font-semibold text-center '>
+							<p className='text-xs  sm:text-sm font-semibold text-center '>
 								application, and React will efficiently update and render just
 								the right components when your data changes. Declarative views
 								make your code more predictable and easier to debug.
@@ -86,11 +86,11 @@ function Cardflip() {
 				<SwiperSlide className='w-96 h-96 bg-slate-800 rounded-xl flex justify-center items-center '>
 					<div className='space-y-4 text-white'>
 						<div></div>
-						<p className='text-4xl font-extrabold font-redressed w-full text-center'>
+						<p className='text-sm sm:text-4xl  font-extrabold font-redressed w-full text-center'>
 							trustworthiness
 						</p>
 						<div className='w-full flex justify-center flex-col items-center px-3'>
-							<p className='text-sm font-semibold text-center '>
+							<p className='text-xs  sm:text-sm font-semibold text-center '>
 								application, and React will efficiently update and render just
 								the right components when your data changes. Declarative views
 								make your code more predictable and easier to debug.
@@ -101,11 +101,11 @@ function Cardflip() {
 				<SwiperSlide className='w-96 h-96 bg-neutral-800 rounded-xl flex justify-center items-center '>
 					<div className='space-y-4 text-white'>
 						<div></div>
-						<p className='text-4xl font-extrabold font-redressed w-full text-center'>
+						<p className='text-sm sm:text-4xl  font-extrabold font-redressed w-full text-center'>
 							expedience
 						</p>
 						<div className='w-full flex justify-center flex-col items-center px-3'>
-							<p className='text-sm font-semibold text-center '>
+							<p className='text-xs  sm:text-sm font-semibold text-center '>
 								application, and React will efficiently update and render just
 								the right components when your data changes. Declarative views
 								make your code more predictable and easier to debug.
@@ -116,11 +116,11 @@ function Cardflip() {
 				<SwiperSlide className='w-96 h-96 bg-stone-800 rounded-xl flex justify-center items-center '>
 					<div className='space-y-4 text-white'>
 						<div></div>
-						<p className='text-4xl font-extrabold font-redressed w-full text-center'>
+						<p className='text-sm sm:text-4xl  font-extrabold font-redressed w-full text-center'>
 							best of the best
 						</p>
 						<div className='w-full flex justify-center flex-col items-center px-3'>
-							<p className='text-sm font-semibold text-center '>
+							<p className='text-xs  sm:text-sm font-semibold text-center '>
 								application, and React will efficiently update and render just
 								the right components when your data changes. Declarative views
 								make your code more predictable and easier to debug.
@@ -131,11 +131,11 @@ function Cardflip() {
 				<SwiperSlide className='w-96 h-96 bg-zinc-800 rounded-xl flex justify-center items-center '>
 					<div className='space-y-4 text-white'>
 						<div></div>
-						<p className='text-4xl font-extrabold font-redressed w-full text-center'>
+						<p className='text-sm sm:text-4xl font-extrabold font-redressed w-full text-center'>
 							industry high standards
 						</p>
 						<div className='w-full flex justify-center flex-col items-center px-3'>
-							<p className='text-sm font-semibold text-center '>
+							<p className='text-xs  sm:text-sm font-semibold text-center '>
 								application, and React will efficiently update and render just
 								the right components when your data changes. Declarative views
 								make your code more predictable and easier to debug.

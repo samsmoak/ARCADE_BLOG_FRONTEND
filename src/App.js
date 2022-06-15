@@ -35,13 +35,13 @@ function App() {
 
 			<BrowserRouter>
 				{/* <React.Suspense fallback={"loading"}> */}
-				<div className='px-12'>
+				<div className=''>
 					<Navbar />
 				</div>
 				<Routes>
-					<Route path='/homepage' element={<Homepage />} />
-					<Route path='/' element={<Main />} />
-					<Route path='/team' element={<Team />} />
+					<Route path='/' element={<Homepage />} />
+					<Route path='mainblog' element={<Main />} />
+					<Route path='team' element={<Team />} />
 					<Route path='login' element={<Login />} />
 					<Route path='write' element={user ? <Write /> : <Signup />} />
 					<Route path='signup' element={<Signup />} />
