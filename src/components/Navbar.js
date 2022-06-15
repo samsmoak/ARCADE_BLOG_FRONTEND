@@ -19,7 +19,7 @@ function Navbar() {
 	return (
 		<div
 			// style={{ textDecoration: "none" }}
-			className='fixed sm:absolute z-30   w-screen bg-white shadow-sm flex justify-between  '
+			className='fixed sm:absolute z-30   w-screen bg-white shadow-sm flex justify-between pl-10 '
 		>
 			<div className='mt-2 ml-14 '>
 				<Link

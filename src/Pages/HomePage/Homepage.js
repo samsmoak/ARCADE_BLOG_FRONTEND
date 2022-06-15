@@ -99,18 +99,20 @@ function Homepage() {
 				</div>
 
 				<div className=' flex items-center flex-col p-28  bg-[url("/src/images/border.svg")] '>
-					<p className='text-2xl text-black font-extrabold'>
-						Companies maximizing sales productivity with Luxstek
-					</p>
-					<div className='flex space-x-8'>
-						<div>bixer</div>
-						<div>facebook</div>
-						<div>akia</div>
-						<div>dominos</div>
+					<div className='bg-black px-4 py-2'>
+						<p className='text-2xl text-gray-400 font-extrabold'>
+							Companies maximizing sales productivity with Luxstek
+						</p>
+						<div className='flex space-x-8 w-full justify-center text-gray-600'>
+							<div>bixer</div>
+							<div>facebook</div>
+							<div>akia</div>
+							<div>dominos</div>
+						</div>
 					</div>
 				</div>
-				<div className='flex justify-center space-x-24 mt-16'>
-					<div className='grid grid-cols-1 px-5 md:grid-cols-2 space-y-5 md:space-y-0 lg:space-x-24 py-40 bg-white '>
+				<div className='flex justify-center space-x-24   bg-[url("/src/images/hakon.svg")]'>
+					<div className='grid grid-cols-1 px-5 md:grid-cols-2 space-y-5 md:space-y-0 lg:space-x-24 py-40  '>
 						<div className='w-full flex justify-center'>
 							<div className='sm:w-96 px-6   bg-white opacity-90'>
 								<div className='flex'>
@@ -163,7 +165,7 @@ function Homepage() {
 						</div>
 					</div>
 				</div>
-				<div className='flex justify-center items-center'>
+				<div className='flex justify-center items-center py-6'>
 					<div className='grid grid-cols-1 sm:grid-cols-2  w-full space-y-4 md:space-y-0  lg:space-x-36  '>
 						<div className='  grid grid-cols-1 lg:grid-cols-2 gap-x-2 space-y-6   place-self-center '>
 							<div className='flex w-full justify-center'>
@@ -288,7 +290,7 @@ function Homepage() {
 					</div>
 				</div>
 				<div className='flex justify-center space-x-24 py-40 bg-[url("/src/images/fabber3.svg")]'>
-					<div className='grid grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-y-0 md:gap-x-4'>
+					<div className='grid grid-cols-1 px-5 gap-y-6 md:grid-cols-2 md:gap-y-0 lg:space-x-32 md:gap-x-4'>
 						<div className='w-full flex justify-center'>
 							<div className='w-96     '>
 								<img
