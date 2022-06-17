@@ -111,11 +111,13 @@ function Single() {
 						</div>
 					</div>
 				</div>
-				<div className='px-2 md:pl-48 w-screen mt-16 '>
+				<div className='px-2 md:pl-48 w-screen md:mt-16 '>
 					<div className='   '>
 						<div className='w-3/4 md:w-big   space-y-3'>
 							<div
-								className={`space-y-4 relative w-big ${deleter && " h-40"}  `}
+								className={`space-y-4 relative md:w-big ${
+									deleter && " h-40"
+								}  `}
 							>
 								<div className='w-full  flex justify-end '>
 									{post.username === user?.username && (
