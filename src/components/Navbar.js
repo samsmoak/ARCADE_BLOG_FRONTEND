@@ -21,7 +21,7 @@ function Navbar() {
 			// style={{ textDecoration: "none" }}
 			className='fixed sm:absolute z-30   w-screen bg-white shadow-sm flex justify-between pl-10 '
 		>
-			<div className='mt-2 ml-14 '>
+			<div className='mt-2 sm:ml-14 '>
 				<Link
 					to='/'
 					className='font-ArchitectDaughter font-extrabold text-red-700 hover:text-red-700 '
@@ -131,20 +131,39 @@ function Navbar() {
 				onClick={sidemenuhandler}
 				// sidemenu={this.state.sidemenu}
 			>
-				<svg
-					xmlns='http://www.w3.org/2000/svg'
-					class='h-6 w-6'
-					fill='none'
-					viewBox='0 0 24 24'
-					stroke='currentColor'
-				>
-					<path
-						stroke-linecap='round'
-						stroke-linejoin='round'
-						stroke-width='2'
-						d='M4 6h16M4 12h16M4 18h16'
-					/>
-				</svg>
+				{!sidemenu ? (
+					<div className='px-1 py-1 bg-blue-500 rounded-lg mr-3 mb-1'>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							class='h-5 w-5'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke='currentColor'
+						>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								stroke-width='2'
+								d='M4 6h16M4 12h16M4 18h16'
+							/>
+						</svg>
+					</div>
+				) : (
+					<div className='px-1 py-1 bg-blue-500 rounded-lg mr-3 mb-1'>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							class='h-5 w-5'
+							viewBox='0 0 20 20'
+							fill='currentColor'
+						>
+							<path
+								fill-rule='evenodd'
+								d='M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 110-2h4a1 1 0 011 1v4a1 1 0 11-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 112 0v1.586l2.293-2.293a1 1 0 011.414 1.414L6.414 15H8a1 1 0 110 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 110-2h1.586l-2.293-2.293a1 1 0 011.414-1.414L15 13.586V12a1 1 0 011-1z'
+								clip-rule='evenodd'
+							/>
+						</svg>
+					</div>
+				)}
 				<div
 					className={`z-50 h-screen w-72 bg-purple-700 absolute top-8 -right-1 transform duration-500 flex justify-center ${
 						sidemenu ? "translate-x-0" : "translate-x-full"
