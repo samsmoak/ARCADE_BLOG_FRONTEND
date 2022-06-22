@@ -57,13 +57,13 @@ function Main() {
 						<p className='text-7xl font-Yanone_Kaffeesatz text-black capitalize'>
 							Thoughts, stories and
 							<br />
-							ideas by the luxstek team
+							ideas by the Arcadei team
 						</p>
 					</div>
 					<div className='w-full px-20 py-8 space-y-4 flex justify-center flex-col'>
 						<div className=' flex  '>
 							<h3 className='text-xl font-bold  text-black font-ArchitectDaughter capitalize  '>
-								luxstek is a mininal theme for ghost.
+								Arcadei is a mininal theme for ghost.
 								<br /> a beautiful way to share your stories with your glowing
 								audience
 							</h3>

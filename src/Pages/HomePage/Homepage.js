@@ -57,14 +57,14 @@ function Homepage() {
 						<div className=' px-4 w-full flex justify-center text-4xl text-white bg-[#011220] opacity-70 py-3'>
 							<div className='text-black'>
 								<h4 className='text-lg font-extrabold text-white'>
-									Luxstek Customer Engagement Platform
+									Arcadei Customer Engagement Platform
 								</h4>
 								<h5 className='text-xl font-bold text-gray-300'>
 									Intelligent customer engagement—at scale
 								</h5>
 								<div>
 									<p className='text-xs font-normal text-gray-400'>
-										Luxstek powers personalized interactions and trusted global
+										Arcadei powers personalized interactions and trusted global
 										<br />
 										communications to connect you with customers.
 									</p>
@@ -100,10 +100,10 @@ function Homepage() {
 
 				<div className=' flex items-center flex-col p-28  bg-[url("/src/images/border.svg")] '>
 					<div className='bg-black px-4 py-2'>
-						<p className='text-2xl text-gray-400 font-extrabold'>
-							Companies maximizing sales productivity with Luxstek
+						<p className='sm:text-2xl text-gray-400 font-extrabold'>
+							Companies maximizing sales productivity with Arcadei
 						</p>
-						<div className='flex space-x-8 w-full justify-center text-gray-600'>
+						<div className='flex sm:space-x-8 items-center   flex-col sm:flex-row w-full sm:justify-center text-gray-600'>
 							<div>bixer</div>
 							<div>facebook</div>
 							<div>akia</div>
@@ -238,7 +238,7 @@ function Homepage() {
 									OUTCOMES, DELIVERED.
 								</h4>
 								<h4 className='uppercase text-base font-semibold'>
-									The LUSTEK <br />
+									The Arcadei <br />
 									Differentiator.
 								</h4>
 							</div>
@@ -268,7 +268,7 @@ function Homepage() {
 								Collaboration that builds team culture
 							</p>
 							<p className='text-xs text-gray-500'>
-								With Arcade, you can go beyond basic gamification to help drive
+								With Arcadei, you can go beyond basic gamification to help drive
 								improved collaboration; deliver data-driven insights on game
 								performance and where they need improvements; and leverage
 								powerful integrations that offer a streamlined platform to help
