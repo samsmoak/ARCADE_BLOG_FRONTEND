@@ -452,7 +452,6 @@ function Homepage() {
 				</div>
 
 				<div className='md:py-20'>
-					{/* <Carouselcom /> */}
 					<Swippslider />
 				</div>
 				<div>
