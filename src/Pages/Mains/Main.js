@@ -57,13 +57,13 @@ function Main() {
 						<p className='text-7xl font-Yanone_Kaffeesatz text-black capitalize'>
 							Thoughts, stories and
 							<br />
-							ideas by the luxstek team
+							ideas by the Arcadei team
 						</p>
 					</div>
 					<div className='w-full px-20 py-8 space-y-4 flex justify-center flex-col'>
 						<div className=' flex  '>
 							<h3 className='text-xl font-bold  text-black font-ArchitectDaughter capitalize  '>
-								luxstek is a mininal theme for ghost.
+								Arcadei is a mininal theme for ghost.
 								<br /> a beautiful way to share your stories with your glowing
 								audience
 							</h3>
@@ -84,7 +84,15 @@ function Main() {
 				</div>
 
 				<div className='w-full flex justify-center space-x-2 my-5 '>
-					<button onClick={prev} className='rounded-full p-2 bg-blue-200'>
+					<button
+						onClick={prev}
+						disabled={pageNumber === 1}
+						className={`rounded-full p-2 ${
+							pageNumber === 1
+								? "bg-blue-200 cursor-not-allowed"
+								: "bg-blue-400"
+						}`}
+					>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							class='h-5 w-5'
@@ -102,7 +110,15 @@ function Main() {
 						{pageNumber}/{totalPages}
 					</div>
 
-					<button onClick={next} className='rounded-full p-2 bg-blue-200'>
+					<button
+						disabled={pageNumber === totalPages}
+						onClick={next}
+						className={`rounded-full p-2 ${
+							pageNumber === totalPages
+								? "bg-blue-200 cursor-not-allowed"
+								: "bg-blue-400"
+						}`}
+					>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							class='h-5 w-5'

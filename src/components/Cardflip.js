@@ -43,7 +43,7 @@ function Cardflip() {
 				<SwiperSlide className='w-96 h-96 bg-purple-700 rounded-xl flex justify-center items-center '>
 					<div className='space-y-4 text-white'>
 						<p className='w-full flex items-center flex-col text-xs sm:text-4xl font-extrabold font-redressed'>
-							<span className='text-yellow-500'>Luxstek's</span> core believes
+							<span className='text-yellow-500'>Arcadei's</span> core believes
 						</p>
 						<div className='w-full flex justify-center flex-col items-center'>
 							<p className='sm:text-xl font-bold'>values</p>

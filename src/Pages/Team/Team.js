@@ -75,7 +75,7 @@ function Team() {
 							<div className='w-full flex justify-center items-center my-6'>
 								<div className=' h-32 w-32 overflow-hidden  bg-mamba-100 rounded-full outline-black shadow-2xl'>
 									<img
-										src={require("../../images/samson.png")}
+										src={require("../../components/Data/sampic.jpg")}
 										alt=''
 										className=' w-full h-full object-cover'
 									/>
@@ -90,7 +90,7 @@ function Team() {
 								</div>
 							</div>
 							<div className='w-full flex flex-col justify-center '>
-								<h3 className='text-gray-400 text-xl'>samson</h3>
+								<h3 className='text-gray-400 text-xl'>samuel</h3>
 								<h6 className='text-gray-500'>
 									Co-founder, CEO, and Instructor
 								</h6>
@@ -286,7 +286,7 @@ function Team() {
 								<div className='w-full flex justify-center items-center my-6'>
 									<div className=' h-32 w-32 overflow-hidden  bg-mamba-100 rounded-full outline-black shadow-2xl'>
 										<img
-											src={require("../../images/dav.jpeg")}
+											src={require("../../images/momo.jpg")}
 											alt=''
 											className=' w-full h-full object-cover'
 										/>
@@ -301,10 +301,8 @@ function Team() {
 									</div>
 								</div>
 								<div className='w-full flex flex-col justify-center '>
-									<h3 className='text-mamba-100 text-xl'>Mark Luke</h3>
-									<h6 className='text-gray-500'>
-										Co-founder, CEO, and Instructor
-									</h6>
+									<h3 className='text-mamba-100 text-xl'>mohammed</h3>
+									<h6 className='text-gray-500'>Backend Enigineer</h6>
 								</div>
 								<div>
 									<p className='text-gray-500 tracking-wider text-sm'>
@@ -322,7 +320,7 @@ function Team() {
 								<div className='w-full flex justify-center items-center my-6'>
 									<div className=' h-32 w-32 overflow-hidden  bg-mamba-100 rounded-full   shadow-2xl'>
 										<img
-											src={require("../../components/Data/sampic.jpg")}
+											src={require("../../images/euno.jpg")}
 											alt=''
 											className=' w-full h-full object-cover '
 										/>
@@ -337,10 +335,8 @@ function Team() {
 									</div>
 								</div>
 								<div className='w-full flex flex-col justify-center '>
-									<h3 className='text-mamba-100 text-xl'>Sara Banks</h3>
-									<h6 className='text-gray-500'>
-										Co-founder, CEO, and Instructor
-									</h6>
+									<h3 className='text-mamba-100 text-xl'>Eunos</h3>
+									<h6 className='text-gray-500'>Fullstack developer</h6>
 								</div>
 								<div>
 									<p className='text-gray-500 tracking-wider text-sm'>
@@ -366,7 +362,7 @@ function Team() {
 								<div className='w-full flex justify-center items-center my-6'>
 									<div className=' h-32 w-32 overflow-hidden  bg-mamba-100 rounded-full outline-black shadow-2xl'>
 										<img
-											src={require("../../images/yashee.jpeg")}
+											src={require("../../images/nana.jpg")}
 											alt=''
 											className=' w-full h-full object-cover'
 										/>
@@ -381,10 +377,8 @@ function Team() {
 									</div>
 								</div>
 								<div className='w-full flex flex-col justify-center '>
-									<h3 className='text-mamba-100 text-xl'>Mark Luke</h3>
-									<h6 className='text-gray-500'>
-										Co-founder, CEO, and Instructor
-									</h6>
+									<h3 className='text-mamba-100 text-xl'>nath</h3>
+									<h6 className='text-gray-500'>Fullstack developer</h6>
 								</div>
 								<div>
 									<p className='text-gray-500 tracking-wider text-sm'>

@@ -26,7 +26,7 @@ function Navbar() {
 					to='/'
 					className='font-ArchitectDaughter font-extrabold text-red-700 hover:text-red-700 '
 				>
-					LUSTEK
+					Arcadei
 				</Link>
 			</div>
 			<div className='hidden sm:flex h-10 w-screen   justify-around items-center   '>
