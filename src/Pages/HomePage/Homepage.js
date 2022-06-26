@@ -450,6 +450,11 @@ function Homepage() {
 						</div>
 					</div>
 				</div>
+				<div className='w-full flex justify-center items-center  mt-8 pt-8'>
+					<p className='text-xl font-semibold text-black underline'>
+						And Over 80,000 Satisfied Engineers.
+					</p>
+				</div>
 
 				<div className='md:py-20'>
 					<Swippslider />
