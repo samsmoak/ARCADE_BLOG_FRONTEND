@@ -275,7 +275,7 @@ function Team() {
 					</div>
 				</div>
 			</div> */}
-			<div className='w-full flex justify-center py-10 text-5xl font-bold font-ArchitectDaughter'>
+			<div className='w-full flex justify-center py-10 text-3xl font-bold font-ArchitectDaughter'>
 				<div>our engineers</div>
 			</div>
 			<div className=' w-full'>
@@ -433,10 +433,10 @@ function Team() {
 				</div>
 			</div>
 
-			<div className='w-full flex justify-center py-10 text-5xl font-bold font-ArchitectDaughter'>
+			<div className='w-full flex justify-center py-10 text-3xl font-bold font-ArchitectDaughter'>
 				<div>our investors</div>
 			</div>
-			<div className='w-full flex justify-center items-center  py-6'>
+			<div className='w-full flex justify-center items-center  py-16 mt-9'>
 				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  lg:space-x-8 lg:h-small2  '>
 					<div className=' '>
 						<div className='bg-white w-72   overflow-hidden shadow-md rounded-2xl'>
