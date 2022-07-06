@@ -96,7 +96,7 @@ function Posts(props) {
 					</div>
 				</div>
 			</div>
-			<div className='h-40 w-screen'></div>
+			{/* <div className='h-40 w-screen'></div> */}
 		</div>
 	);
 }

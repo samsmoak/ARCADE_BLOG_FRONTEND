@@ -83,7 +83,7 @@ function Main() {
 					</div>
 				</div>
 
-				<div className='w-full flex justify-center space-x-2 my-5 '>
+				<div className='w-full flex justify-center space-x-2 mb-5 '>
 					<button
 						onClick={prev}
 						disabled={pageNumber === 1}
