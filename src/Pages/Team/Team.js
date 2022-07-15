@@ -23,9 +23,9 @@ import { motion, AnimatePresence } from "framer-motion";
 function Team() {
 	return (
 		<div className='w-screen'>
-			<div className='bg-[url("/src/images/wavy2.svg")] h-small1 w-full flex justify-center items-center'>
-				<div className='grid grid-flow-col grid-cols-4'>
-					<div className='text-black col-span-2 col-start-2 place-content-center'>
+			<div className='bg-[url("/src/images/teamtwo.svg")] space-y-20 bg-no-repeat py-36 w-full flex flex-col justify-center items-center'>
+				<div className=''>
+					<div className='text-white '>
 						<h3 className='text-5xl text-center font-semibold uppercase font-ArchitectDaughter '>
 							our team
 						</h3>
@@ -39,8 +39,6 @@ function Team() {
 						</div>
 					</div>
 				</div>
-			</div>
-			<div className='w-full py-8 flex flex-col items-center justify-center bg-[url("/src/images/missi3.svg")] '>
 				<div className='w-full flex justify-center'>
 					<div className='w-full h-full md:w-small1 md:h-small2 overflow-hidden '>
 						<img
@@ -50,17 +48,18 @@ function Team() {
 						/>
 					</div>
 				</div>
-
-				<div className='underline py-10 text-5xl font-bold font-ArchitectDaughter'>
+			</div>
+			<div className='w-full py-8 flex flex-col items-center justify-center '>
+				<div className=' py-10 text-5xl font-bold font-ArchitectDaughter'>
 					our mission
 				</div>
-				<p className='w-3/5 text-black font-bold'>
+				<p className='w-3/6 text-gray-400  font-medium'>
 					Our mission is to make 1 million employees happy across the globe. We
 					believe that happy workers do their best work, live their best lives,
 					and are more successful because of it.
 				</p>
 			</div>
-			<div className='w-full py-7 flex justify-center text-4xl  font-ArchitectDaughter text-blue-600'>
+			<div className='w-full py-7 flex justify-center text-4xl  font-ArchitectDaughter text-black'>
 				<div>our executives</div>
 			</div>
 			<div className='mt-20 px-4 '>
