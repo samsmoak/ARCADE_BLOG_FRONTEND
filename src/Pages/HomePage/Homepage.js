@@ -52,7 +52,7 @@ function Homepage() {
 	return (
 		<div className='md:pt-20 md:px-12'>
 			<div className='shadow-xl'>
-				<div className='grid grid-cols-1 md:grid-cols-2  bg-[url("/src/images/border.svg")] bg-no-repeat object-contain bg-center '>
+				<div className='grid grid-cols-1 md:grid-cols-2  bg-[url("/src/images/homeone.svg")] bg-no-repeat object-contain bg-center '>
 					<div className=' px-4 w-full h-small1  flex justify-center items-center space-x-2 object-cover'>
 						<div className=' px-4 w-full flex justify-center text-4xl text-white bg-[#011220] opacity-70 py-3'>
 							<div className='text-black'>
@@ -98,8 +98,8 @@ function Homepage() {
 					</div>
 				</div>
 
-				<div className=' flex items-center flex-col p-28  bg-[url("/src/images/border.svg")] '>
-					<div className='bg-black px-4 py-2'>
+				<div className=' flex items-center flex-col p-28   '>
+					<div className='bg-black px-4 py-10 rounded-xl'>
 						<p className='sm:text-2xl text-gray-400 font-extrabold'>
 							Companies maximizing sales productivity with Arcadei
 						</p>
@@ -111,7 +111,7 @@ function Homepage() {
 						</div>
 					</div>
 				</div>
-				<div className='flex justify-center space-x-24   bg-[url("/src/images/hakon.svg")]'>
+				<div className='flex justify-center space-x-24  '>
 					<div className='grid grid-cols-1 px-5 md:grid-cols-2 space-y-5 md:space-y-0 lg:space-x-24 py-40  '>
 						<div className='w-full flex justify-center'>
 							<div className='sm:w-96 px-6   bg-white opacity-90'>

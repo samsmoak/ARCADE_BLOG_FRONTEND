@@ -49,7 +49,7 @@ function Single() {
 	};
 	return (
 		<div className=' '>
-			<div className=' w-screen flex flex-col justify-center h-big bg-[url("/src/images/stacked-steps-haikei.svg")] pl-4 md:pl-48 space-y-8'>
+			<div className=' w-screen flex flex-col justify-center  pt-60 bg-[url("/src/images/onelay2.svg")] bg-no-repeat pl-4 md:pl-48 space-y-8'>
 				<div>
 					<div
 						onClick={handleClick}
@@ -99,11 +99,8 @@ function Single() {
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<div className='bg-[#ECEFF9]'>
-				<div className='w-screen pl-4 sm:pl-48 flex '>
-					<div className=' -translate-y-40 w-3/4 h-80 md:w-small1 md:h-96 '>
+				<div className='w-screen  flex '>
+					<div className='  w-3/4 h-80 md:w-small1 md:h-96 '>
 						<div className='   bg-slate-600  overflow-hidden rounded-3xl   '>
 							{post.photo && (
 								<img src={PF + post.photo} alt='' className='w-full h-full' />
@@ -111,6 +108,9 @@ function Single() {
 						</div>
 					</div>
 				</div>
+			</div>
+
+			<div className=''>
 				<div className='px-2 md:pl-48 w-screen md:mt-16 '>
 					<div className='   '>
 						<div className='w-3/4 md:w-big   space-y-3'>
@@ -196,7 +196,7 @@ function Single() {
 									</div>
 								)}
 							</div>
-							<div className='text-zinc-800 font-body md:leading-relaxed w-full pl-5 lg:pl-20'>
+							<div className='text-zinc-800 font-body md:leading-relaxed w-full pl-5 lg:pl-40'>
 								<p>{parse(desc)}</p>
 							</div>
 						</div>
