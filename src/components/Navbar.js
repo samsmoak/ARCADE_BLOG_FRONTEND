@@ -132,7 +132,7 @@ function Navbar() {
 				// sidemenu={this.state.sidemenu}
 			>
 				{!sidemenu ? (
-					<div className='px-1 py-1 bg-blue-500 rounded-lg mr-3 mb-1'>
+					<div className=' rounded-lg mr-3 mb-1 text-purple-600'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							class='h-5 w-5'
@@ -149,23 +149,25 @@ function Navbar() {
 						</svg>
 					</div>
 				) : (
-					<div className='px-1 py-1 bg-blue-500 rounded-lg mr-3 mb-1'>
+					<div className=' rounded-lg mr-3 mb-1'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							class='h-5 w-5'
-							viewBox='0 0 20 20'
-							fill='currentColor'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke='currentColor'
+							stroke-width='2'
 						>
 							<path
-								fill-rule='evenodd'
-								d='M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 110-2h4a1 1 0 011 1v4a1 1 0 11-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 112 0v1.586l2.293-2.293a1 1 0 011.414 1.414L6.414 15H8a1 1 0 110 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 110-2h1.586l-2.293-2.293a1 1 0 011.414-1.414L15 13.586V12a1 1 0 011-1z'
-								clip-rule='evenodd'
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								d='M6 18L18 6M6 6l12 12'
 							/>
 						</svg>
 					</div>
 				)}
 				<div
-					className={`z-50 h-screen w-72 bg-purple-700 absolute top-8 -right-1 transform duration-500 flex justify-center ${
+					className={`z-50 h-small1 w-96 sm:w-small2 bg-zinc-500 absolute top-8 -right-1 transform duration-500 flex justify-center ${
 						sidemenu ? "translate-x-0" : "translate-x-full"
 					}`}
 				>
@@ -180,7 +182,7 @@ function Navbar() {
 								className='text-white '
 							>
 								{user && (
-									<div className=' rounded-full overflow-hidden h-12 w-12  text-fuchsia-800 bg-red-400 text-center capitalize font-extrabold'>
+									<div className='  overflow-hidden h-8 w-12  text-fuchsia-800 bg-red-400 text-center capitalize font-extrabold'>
 										{user.profilePic !== "" ? (
 											<img
 												src={PF + user.profilePic}
@@ -188,7 +190,7 @@ function Navbar() {
 												className='object-cover h-full w-full'
 											/>
 										) : (
-											<div className='capitalize w-full h-full flex justify-center items-center text-3xl font-extrabold text-black'>
+											<div className='capitalize w-full h-full flex justify-center items-center text-3xl font-bold text-black'>
 												{user.username.slice(0, 1)}
 											</div>
 										)}
@@ -200,38 +202,41 @@ function Navbar() {
 						<Link
 							to='/'
 							style={{ textDecoration: "none" }}
-							className='text-white '
+							className='text-white text-base '
 						>
 							Home
 						</Link>
 						<Link
 							to='/team'
 							style={{ textDecoration: "none" }}
-							className='text-white '
+							className='text-white text-base'
 						>
 							Team
 						</Link>
-						<div style={{ textDecoration: "none" }} className='text-white '>
+						<div
+							style={{ textDecoration: "none" }}
+							className='text-white text-base'
+						>
 							Features
 						</div>
 						<Link
 							to='/mainblog'
 							style={{ textDecoration: "none" }}
-							className='text-white '
+							className='text-white text-base '
 						>
 							blog
 						</Link>
 						<Link
 							to='/write'
 							style={{ textDecoration: "none" }}
-							className='text-white '
+							className='text-white text-base '
 						>
 							write
 						</Link>
 						{user && (
 							<div className='w-full flex justify-center'>
 								<div
-									className='text-gray-200 rounded-xl bg-gray-700 px-2 py-1 '
+									className='text-gray-200 rounded-md bg-gray-700 px-2 text-base '
 									onClick={handlelogout}
 								>
 									logout
@@ -241,11 +246,11 @@ function Navbar() {
 						<div className='text-white '>
 							{!user && (
 								<div className='flex flex-col'>
-									<div className='text-white'>
+									<div className='text-white '>
 										<Link
 											to='login'
 											style={{ textDecoration: "none" }}
-											className='text-black'
+											className='text-black text-base bg-slate-600 py-1 px-3  '
 										>
 											Login
 										</Link>
@@ -253,7 +258,8 @@ function Navbar() {
 									<div className=' text-black'>
 										<Link
 											to='signup'
-											className='text-green-500 hover:text-green-500'
+											style={{ textDecoration: "none" }}
+											className='text-black text-base bg-slate-600 py-1 px-2 '
 										>
 											Signup
 										</Link>

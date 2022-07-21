@@ -99,19 +99,126 @@ function Homepage() {
 				</div>
 
 				<div className=' flex items-center flex-col p-28   '>
-					<div className='bg-black px-4 py-10 rounded-xl'>
-						<p className='sm:text-2xl text-gray-400 font-extrabold'>
+					<div className='bg-gray-50 px-4 py-10 rounded-xl'>
+						<p className='w-full flex justify-center text-xl font-bold'>
 							Companies maximizing sales productivity with Arcadei
 						</p>
-						<div className='flex sm:space-x-8 items-center   flex-col sm:flex-row w-full sm:justify-center text-gray-600'>
-							<div>bixer</div>
-							<div>facebook</div>
-							<div>akia</div>
-							<div>dominos</div>
+						<div className='w-full flex justify-center'>
+							<div className='bg-white overflow-hidden   flex justify-center'>
+								<div className='flex sm:space-x-8 items-center   flex-col sm:flex-row w-full sm:justify-center text-gray-600 md:animate-[wiggle2_20s_linear_infinite_forwards] lg:animate-[wiggle_20s_linear_infinite_forwards]'>
+									<div>
+										<img
+											src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png'
+											alt='some'
+											className='h-42 w-52  '
+										/>
+									</div>
+									<div>
+										<img
+											src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png'
+											alt='some'
+											className='h-42 w-52  '
+										/>
+									</div>
+									<div>
+										<img
+											src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png'
+											alt='some'
+											className='h-42 w-52  '
+										/>
+									</div>
+									<div>
+										<img
+											src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png'
+											alt='some'
+											className='h-42 w-52  '
+										/>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div className='flex justify-center space-x-24  '>
+				<div className='md:hidden'>
+					<div className='px-4'>
+						<div className='w-full flex justify-center text-lg font-bold'>
+							<div>A Complete Solution for your Business Needs</div>
+						</div>
+
+						<div>
+							<h4 className='text-sm capitalize text-purple-600'>manager</h4>
+							<h4 className='text-base capitalize '>focus on your client</h4>
+							<p className='text-xs'>
+								We get it. Running a salon is hard. You're always on the go, you
+								have a million things to do, and your clients have so many
+								questions, but they don't come with instruction manuals!
+							</p>
+						</div>
+						<div className='w-full px-7'>
+							<img src={require("../../images/booking.png")} alt=''></img>
+						</div>
+						<div className='text-xs'>
+							<h4 className='text-xs'>
+								Keep track of your appointments and client data
+							</h4>
+							<h4 className='text-xs'>
+								Create custom treatments for every client (and keep them
+								consistent!)
+							</h4>
+							<h4 className='text-xs'>
+								Build loyalty with memberships and rewards programs
+							</h4>
+						</div>
+						<div className='w-full flex justify-center py-4'>
+							<button className='px-4 bg-purple-600 py-2 text-white rounded-md text-sm'>
+								start managing now
+							</button>
+						</div>
+					</div>
+				</div>
+				<div className='hidden md:flex flex-col'>
+					<div className='w-full flex justify-center text-xl font-bold'>
+						<div>A Complete Solution for your Business Needs</div>
+					</div>
+					<div className='px-4 flex py-8 '>
+						<div className='grid grid-flow-col gap-6'>
+							<div className='w-full h-full flex justify-center flex-col '>
+								<h4 className='text-sm lg:text-2xl capitalize text-purple-600 font-bold'>
+									manager
+								</h4>
+								<h4 className='text-sm lg:text-3xl capitalize font-bold'>
+									focus on your client
+								</h4>
+								<p className='text-sm lg:text-xl text-gray-600 font-light'>
+									We get it. Running a salon is hard. You're always on the go,
+									you have a million things to do, and your clients have so many
+									questions, but they don't come with instruction manuals!
+								</p>
+								<div className='text-xs'>
+									<h4 className='text-sm lg:text-lg'>
+										Keep track of your appointments and client data
+									</h4>
+									<h4 className='text-sm lg:text-lg'>
+										Create custom treatments for every client (and keep them
+										consistent!)
+									</h4>
+									<h4 className='text-sm lg:text-lg'>
+										Build loyalty with memberships and rewards programs
+									</h4>
+								</div>
+								<div className='w-full flex py-4'>
+									<button className='px-4 bg-purple-600 py-2 text-white rounded-md text-sm'>
+										start managing now
+									</button>
+								</div>
+							</div>
+							<div className='md:w-[400px] lg:w-[550px]'>
+								<img src={require("../../images/booking.png")} alt=''></img>
+							</div>
+						</div>
+					</div>
+				</div>
+				{/* <div className='flex justify-center space-x-24  '>
 					<div className='grid grid-cols-1 px-5 md:grid-cols-2 space-y-5 md:space-y-0 lg:space-x-24 py-40  '>
 						<div className='w-full flex justify-center'>
 							<div className='sm:w-96 px-6   bg-white opacity-90'>
@@ -164,8 +271,8 @@ function Homepage() {
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className='flex justify-center items-center py-6'>
+				</div> */}
+				<div className='flex justify-center items-center py-6 mt-28'>
 					<div className='grid grid-cols-1 sm:grid-cols-2  w-full space-y-4 md:space-y-0  lg:space-x-36  '>
 						<div className='  grid grid-cols-1 lg:grid-cols-2 gap-x-2 space-y-6   place-self-center '>
 							<div className='flex w-full justify-center'>
@@ -234,10 +341,10 @@ function Homepage() {
 						</div>
 						<div className='place-self-center py-5 '>
 							<div className='flex justify-center   flex-col self-center'>
-								<h4 className='tracking-wider font-semibold text-gray-600 text-lg'>
+								<h4 className='tracking-wider font-bold text-black text-sm'>
 									OUTCOMES, DELIVERED.
 								</h4>
-								<h4 className='uppercase text-base font-semibold'>
+								<h4 className='uppercase text-xs font-semibold'>
 									The Arcadei <br />
 									Differentiator.
 								</h4>
@@ -245,7 +352,92 @@ function Homepage() {
 						</div>
 					</div>
 				</div>
-				<div className='flex justify-center space-x-24 mt-16'>
+
+				<div className='hidden md:flex flex-col'>
+					<div className='px-4 flex py-8 '>
+						<div className='grid grid-flow-col gap-6'>
+							<div className='w-full h-full flex justify-center flex-col '>
+								<h4 className='lg:text-2xl capitalize text-purple-600 font-bold'>
+									Grow
+								</h4>
+								<h4 className='lg:text-3xl capitalize font-bold'>
+									Grow your business with loyal clients
+								</h4>
+								<p className='text-sm lg:text-xl text-gray-600 font-light'>
+									That's why, we've built our software around making sure that
+									you can use your salon as a marketing tool.
+								</p>
+								<div className='lg:text-xs'>
+									<h4 className='text-sm lg:text-lg'>
+										Email marketing campaigns that remind clients of their
+										appointments and give them special offers to comeback again
+										soon.
+									</h4>
+									<h4 className='text-sm lg:text-lg'>
+										Customizable online booking systems that help clients find
+										you easily and remember who they've booked with before.
+									</h4>
+									<h4 className='text-sm lg:text-lg'>
+										A website that makes it easy for clients to book
+										appointments online, find directions, and see the latest
+										deals and promotions in one place.
+									</h4>
+								</div>
+								<div className='w-full flex py-4'>
+									<button className='px-4 bg-purple-600 py-2 text-white rounded-md text-sm'>
+										start growing now
+									</button>
+								</div>
+							</div>
+							<div className='md:w-[400px] lg:w-[550px]'>
+								<img src={require("../../images/grow1.png")} alt=''></img>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className=' md:hidden flex-col'>
+					<div className='px-4 flex py-8 '>
+						<div className=''>
+							<div className='w-full  flex justify-center flex-col '>
+								<h4 className=' text-sm capitalize text-purple-600 font-bold'>
+									Grow
+								</h4>
+								<h4 className='text-base capitalize font-bold'>
+									Grow your business with loyal clients
+								</h4>
+								<p className='text-sm text-gray-600 font-light'>
+									That's why, we've built our software around making sure that
+									you can use your salon as a marketing tool.
+								</p>
+								<div className='text-sm'>
+									<h4 className='text-sm'>
+										Email marketing campaigns that remind clients of their
+										appointments and give them special offers to comeback again
+										soon.
+									</h4>
+									<h4 className='text-sm'>
+										Customizable online booking systems that help clients find
+										you easily and remember who they've booked with before.
+									</h4>
+									<h4 className='text-sm'>
+										A website that makes it easy for clients to book
+										appointments online, find directions, and see the latest
+										deals and promotions in one place.
+									</h4>
+								</div>
+								<div className='w-full flex py-4'>
+									<button className='px-4 bg-purple-600 py-2 text-white rounded-md text-sm'>
+										start growing now
+									</button>
+								</div>
+							</div>
+							<div className='md:w-[400px] lg:w-[550px]'>
+								<img src={require("../../images/grow1.png")} alt=''></img>
+							</div>
+						</div>
+					</div>
+				</div>
+				{/* <div className='flex justify-center space-x-24 mt-16'>
 					<div className='grid grid-cols-1 px-5 gap-y-4 md:gap-y-0 md:grid-cols-2 lg:space-x-24 py-40 bg-white '>
 						<div className='sm:w-96 px-6 sm:px-0'>
 							<div className='flex sm:space-x-3'>
@@ -288,8 +480,8 @@ function Homepage() {
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className='flex justify-center space-x-24 py-40 bg-[url("/src/images/fabber3.svg")]'>
+				</div> */}
+				{/* <div className='flex justify-center space-x-24 py-40 '>
 					<div className='grid grid-cols-1 px-5 gap-y-6 md:grid-cols-2 md:gap-y-0 lg:space-x-32 md:gap-x-4'>
 						<div className='w-full flex justify-center'>
 							<div className='w-96     '>
@@ -367,8 +559,8 @@ function Homepage() {
 							</button>
 						</div>
 					</div>
-				</div>
-				<div className='  py-10 w-full  grid  lg:grid-cols-4 place-items-center  text-black '>
+				</div> */}
+				<div className=' mt-20 py-10 w-full  grid  lg:grid-cols-4 place-items-center  text-black '>
 					<div className='col-span-1 px-4 self-center'>
 						<h6 className='font-medium text-indigo-400'>RESOURCES</h6>
 						<h3 className='font-extrabold text-lg font-sans'>

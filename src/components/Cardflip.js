@@ -38,10 +38,10 @@ function Cardflip() {
 				effect={"cards"}
 				grabCursor={true}
 				modules={[EffectCards]}
-				className='flex justify-center items-center h-80  w-52 sm:h-96 sm:w-64 lg:w-80 '
+				className='flex justify-center items-center h-80  w-52 sm:h-[535px] sm:w-64 lg:w-[275px]  '
 			>
-				<SwiperSlide className='w-96 h-96 bg-purple-700 rounded-xl flex justify-center items-center '>
-					<div className='space-y-4 text-white'>
+				<SwiperSlide className='w-60 h-96  rounded-6xl flex justify-center items-center  bg-contain bg-no-repeat bg-center  '>
+					{/* <div className='space-y-4 text-white'>
 						<p className='w-full flex items-center flex-col text-xs sm:text-4xl font-extrabold font-redressed'>
 							<span className='text-yellow-500'>Arcadei's</span> core believes
 						</p>
@@ -51,10 +51,17 @@ function Cardflip() {
 								& principles
 							</p>
 						</div>
+					</div> */}
+					<div>
+						<img
+							src={require("../../src/images/phona2.png")}
+							className='h-full w-full'
+							alt=''
+						/>
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-stone-800 rounded-xl flex justify-center items-center '>
-					<div className='space-y-4 text-white'>
+				<SwiperSlide className='w-96 h-96 bg-stone-800 rounded-6xl flex justify-center items-center  bg-contain bg-no-repeat bg-center  '>
+					{/* <div className='space-y-4 text-white'>
 						<div></div>
 						<p className='text-sm sm:text-4xl font-extrabold font-redressed w-full text-center'>
 							imaginative power
@@ -66,10 +73,17 @@ function Cardflip() {
 								make your code more predictable and easier to debug.
 							</p>
 						</div>
+					</div> */}
+					<div>
+						<img
+							src={require("../../src/images/phona3.png")}
+							className='h-full w-full'
+							alt=''
+						/>
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-neutral-800 rounded-xl flex justify-center items-center '>
-					<div className='space-y-4 text-white'>
+				<SwiperSlide className='w-96 h-96 bg-neutral-800 rounded-6xl flex justify-center items-center '>
+					{/* <div className='space-y-4 text-white'>
 						<div></div>
 						<p className='text-sm sm:text-4xl  font-extrabold font-redressed w-full text-center'>
 							reliability
@@ -81,66 +95,22 @@ function Cardflip() {
 								make your code more predictable and easier to debug.
 							</p>
 						</div>
+					</div> */}
+					<div>
+						<img
+							src={require("../../src/images/phona4.png")}
+							className='h-full w-full'
+							alt=''
+						/>
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-slate-800 rounded-xl flex justify-center items-center '>
-					<div className='space-y-4 text-white'>
-						<div></div>
-						<p className='text-sm sm:text-4xl  font-extrabold font-redressed w-full text-center'>
-							trustworthiness
-						</p>
-						<div className='w-full flex justify-center flex-col items-center px-3'>
-							<p className='text-xs  sm:text-sm font-semibold text-center '>
-								application, and React will efficiently update and render just
-								the right components when your data changes. Declarative views
-								make your code more predictable and easier to debug.
-							</p>
-						</div>
-					</div>
-				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-neutral-800 rounded-xl flex justify-center items-center '>
-					<div className='space-y-4 text-white'>
-						<div></div>
-						<p className='text-sm sm:text-4xl  font-extrabold font-redressed w-full text-center'>
-							expedience
-						</p>
-						<div className='w-full flex justify-center flex-col items-center px-3'>
-							<p className='text-xs  sm:text-sm font-semibold text-center '>
-								application, and React will efficiently update and render just
-								the right components when your data changes. Declarative views
-								make your code more predictable and easier to debug.
-							</p>
-						</div>
-					</div>
-				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-stone-800 rounded-xl flex justify-center items-center '>
-					<div className='space-y-4 text-white'>
-						<div></div>
-						<p className='text-sm sm:text-4xl  font-extrabold font-redressed w-full text-center'>
-							best of the best
-						</p>
-						<div className='w-full flex justify-center flex-col items-center px-3'>
-							<p className='text-xs  sm:text-sm font-semibold text-center '>
-								application, and React will efficiently update and render just
-								the right components when your data changes. Declarative views
-								make your code more predictable and easier to debug.
-							</p>
-						</div>
-					</div>
-				</SwiperSlide>
-				<SwiperSlide className='w-96 h-96 bg-zinc-800 rounded-xl flex justify-center items-center '>
-					<div className='space-y-4 text-white'>
-						<div></div>
-						<p className='text-sm sm:text-4xl font-extrabold font-redressed w-full text-center'>
-							industry high standards
-						</p>
-						<div className='w-full flex justify-center flex-col items-center px-3'>
-							<p className='text-xs  sm:text-sm font-semibold text-center '>
-								application, and React will efficiently update and render just
-								the right components when your data changes. Declarative views
-								make your code more predictable and easier to debug.
-							</p>
-						</div>
+				<SwiperSlide className='w-96 h-96 bg-zinc-800 rounded-6xl flex justify-center items-center '>
+					<div>
+						<img
+							src={require("../../src/images/phona5.png")}
+							className='h-full w-full'
+							alt=''
+						/>
 					</div>
 				</SwiperSlide>
 			</Swiper>
