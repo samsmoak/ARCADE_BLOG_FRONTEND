@@ -62,6 +62,16 @@ module.exports = {
 			borderRadius: {
 				"6xl": "40px",
 			},
+			keyframes: {
+				wiggle: {
+					"0%": { transform: "translateX(900px)" },
+					"100%": { transform: "translateX(-900px)" },
+				},
+				wiggle2: {
+					"0%": { transform: "translateX(600px)" },
+					"100%": { transform: "translateX(-550px )" },
+				},
+			},
 		},
 	},
 	plugins: [require("@tailwindcss/forms")],
